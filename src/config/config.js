@@ -11,6 +11,28 @@ export const SCRAPER_CONFIG = {
   },
 };
 
+export const BLINKIT_CONFIG = {
+  CATEGORIES_FILE: "blinkit-categories.json",
+  PRODUCTS_FILE: "blinkit-products.json",
+  BASE_URL: "https://blinkit.com",
+  CATEGORIES_URL: "https://blinkit.com/categories",
+  PINCODE: "400053",
+  DELAY_BETWEEN_REQUESTS: 2000,
+  BROWSER_CONFIG: {
+    headless: false,
+    defaultViewport: null,
+  },
+};
+
+export const BLINKIT_SELECTORS = {
+  CATEGORY_CONTAINER: ".Category__Container-sc-1k4awti-3",
+  CATEGORY_LINKS_CONTAINER: "Category__Temp-sc-1k4awti-1",
+  CATEGORY_LINK: ".Category__PageLink-sc-1k4awti-2",
+  PINCODE_INPUT: ".LocationSearchBox__InputSelect-sc-1k8u6a6-0.fZCGlI",
+  PINCODE_SELECT:
+    ".LocationSearchList__LocationListContainer-sc-93rfr7-0.lcVvPT .LocationSearchList__LocationLabel-sc-93rfr7-2.FUlwF",
+};
+
 export const SELECTORS = {
   PRODUCT_GRID:
     ".MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-1.mui-style-tuxzvu .MuiGrid-item",
