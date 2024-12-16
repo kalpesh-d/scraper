@@ -145,7 +145,6 @@ export class ProductService {
               image,
               price,
               savePrice,
-              off: savePrice ? price - savePrice : 0,
               variant,
             });
           }

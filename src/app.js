@@ -1,6 +1,7 @@
 import { CategoryService } from "./services/categoryService.js";
 import { ProductService } from "./services/productService.js";
 import { BlinkitCategoryService } from "./services/blinkitCategoryService.js";
+import { BlinkitProductService } from "./services/blinkitProductService.js";
 
 const main = async () => {
   try {
@@ -20,7 +21,10 @@ const main = async () => {
 
     if (blinkitCategories) {
       console.log("Successfully scraped Blinkit categories");
-      // We'll implement product scraping later
+      const blinkitProductService = new BlinkitProductService();
+      for (const categoryGroup of Object.values(blinkitCategories)) {
+        await blinkitProductService.scrapeProducts(categoryGroup);
+      }
     }
   } catch (error) {
     console.error("Application error:", error.message);
