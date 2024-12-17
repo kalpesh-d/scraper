@@ -3,6 +3,7 @@ import { ProductService } from "./services/productService.js";
 import { BlinkitCategoryService } from "./services/blinkitCategoryService.js";
 import { BlinkitProductService } from "./services/blinkitProductService.js";
 import { ZeptoCategoryService } from "./services/zeptoCategoryService.js";
+import { ZeptoProductService } from "./services/zeptoProductService.js";
 
 const main = async () => {
   try {
@@ -34,7 +35,8 @@ const main = async () => {
     const zeptoCategories = await zeptoCategoryService.fetchCategories();
 
     if (zeptoCategories) {
-      // TODO: Add product scraping logic here
+      const zeptoProductService = new ZeptoProductService();
+      await zeptoProductService.scrapeProducts(zeptoCategories);
     }
   } catch (error) {
     console.error("Application error:", error.message);

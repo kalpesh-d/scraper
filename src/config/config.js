@@ -73,4 +73,13 @@ export const ZEPTO_SELECTORS = {
   SUBCATEGORY_CONTAINER: ".plp-cat-sub-category-container",
   SUBCATEGORY_ITEM: ".plp-cat-sub-category-item",
   SUBCATEGORY_NAME: ".plp-cat-sub-cate-name",
+  PRODUCTS_CONTAINER:
+    ".grid.h-full.w-full.grid-cols-2.gap-y-4.content-start.gap-x-2.px-2\\.5.py-4.md\\:p-3.md\\:grid-cols-3.md\\:gap-x-3.lg\\:grid-cols-5.xl\\:grid-cols-6.pb-24.no-scrollbar",
+  PRODUCT_ITEM: "a.relative.my-3.rounded-t-xl.rounded-b-md.group",
+  PRODUCT_IMAGE:
+    ".overflow-hidden.rounded-xl.border-\\[0\\.5px\\].border-gray-200 img",
+  PRODUCT_NAME: ".font-subtitle.text-lg.tracking-wider.line-clamp-2",
+  PRODUCT_VARIANT: ".font-heading.text-lg.tracking-wide.line-clamp-1.mt-1",
+  CURRENT_PRICE: ".flex.items-baseline.gap-1 h4",
+  ACTUAL_PRICE: ".flex.items-baseline.gap-1 p",
 };
