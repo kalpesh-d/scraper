@@ -70,4 +70,7 @@ export const ZEPTO_SELECTORS = {
   CONFIRM_LOCATION_BUTTON:
     ".py-1.px-7.text-base.border-skin-primary.border.bg-skin-primary.text-skin-base.rounded-md.tracking-widest.w-full.\\!py-3\\.5.font-bold",
   CATEGORY_LINK: "a.contents",
+  SUBCATEGORY_CONTAINER: ".plp-cat-sub-category-container",
+  SUBCATEGORY_ITEM: ".plp-cat-sub-category-item",
+  SUBCATEGORY_NAME: ".plp-cat-sub-cate-name",
 };

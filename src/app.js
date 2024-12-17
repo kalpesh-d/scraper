@@ -20,13 +20,13 @@ const main = async () => {
     const blinkitCategoryService = new BlinkitCategoryService();
     const blinkitCategories = await blinkitCategoryService.fetchCategories();
 
-    if (blinkitCategories) {
-      console.log("Successfully scraped Blinkit categories");
-      const blinkitProductService = new BlinkitProductService();
-      for (const categoryGroup of Object.values(blinkitCategories)) {
-        await blinkitProductService.scrapeProducts(categoryGroup);
-      }
-    }
+    // if (blinkitCategories) {
+    //   console.log("Successfully scraped Blinkit categories");
+    //   const blinkitProductService = new BlinkitProductService();
+    //   for (const categoryGroup of Object.values(blinkitCategories)) {
+    //     await blinkitProductService.scrapeProducts(categoryGroup);
+    //   }
+    // }
 
     // Zepto scraping
     console.log("\n=== Starting Zepto Scraping ===\n");
@@ -34,7 +34,6 @@ const main = async () => {
     const zeptoCategories = await zeptoCategoryService.fetchCategories();
 
     if (zeptoCategories) {
-      console.log("Successfully scraped Zepto categories");
       // TODO: Add product scraping logic here
     }
   } catch (error) {
