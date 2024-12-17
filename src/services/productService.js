@@ -87,9 +87,9 @@ export class ProductService {
         // Get current products
         const currentProducts = await this.extractProducts(page);
 
-        console.log(
-          `✔ Found ${currentProducts.length} products so far in ${category.name}`
-        );
+        // console.log(
+        //   `✔ Found ${currentProducts.length} products so far in ${category.name}`
+        // );
 
         // If no new products and scroll height hasn't changed, we've reached the end
         if (

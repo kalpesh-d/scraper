@@ -44,3 +44,30 @@ export const SELECTORS = {
   PRODUCT_VARIANT:
     "#demo-customized-select .bootstrap-select_option__SB_Xy span:first-child",
 };
+
+export const ZEPTO_CONFIG = {
+  CATEGORIES_FILE: "zepto-categories.json",
+  PRODUCTS_FILE: "zepto-products.json",
+  BASE_URL: "https://www.zeptonow.com",
+  CATEGORIES_URL: "https://www.zeptonow.com/categories",
+  LOCATION: "andheri",
+  DELAY_BETWEEN_REQUESTS: 2000,
+  BROWSER_CONFIG: {
+    headless: false,
+    defaultViewport: null,
+  },
+};
+
+export const ZEPTO_SELECTORS = {
+  DETECT_LOCATION_BUTTON:
+    ".px-7.text-base.border-skin-primary.border.bg-skin-primary.text-skin-base.rounded-md.tracking-widest.mr-4.max-w-\\[8rem\\].\\!basis-1\\/2.py-\\[0\\.5rem\\].\\!px-0.sm\\:mr-6",
+  LOCATION_INPUT:
+    ".focus\\:outline-none.block.py-3.mx-2.appearance-none.font-subtitle.flex-grow.font-normal.bg-transparent.text-md.\\!text-sm",
+  LOCATION_SUGGESTION_CONTAINER:
+    ".flex.cursor-pointer.items-center.pt-4.text-left.undefined",
+  LOCATION_SUGGESTION_TEXT:
+    "h4.font-heading.text-lg.tracking-wide.line-clamp-1.mb-1.capitalize",
+  CONFIRM_LOCATION_BUTTON:
+    ".py-1.px-7.text-base.border-skin-primary.border.bg-skin-primary.text-skin-base.rounded-md.tracking-widest.w-full.\\!py-3\\.5.font-bold",
+  CATEGORY_LINK: "a.contents",
+};
