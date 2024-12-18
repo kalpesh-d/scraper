@@ -1,4 +1,4 @@
-export const SCRAPER_CONFIG = {
+export const DMART_CONFIG = {
   CATEGORIES_FILE: "dmart-categories.json",
   PRODUCTS_FILE: "dmart-products.json",
   CATEGORIES_API:
@@ -9,6 +9,18 @@ export const SCRAPER_CONFIG = {
     headless: false,
     defaultViewport: null,
   },
+};
+
+export const DMART_SELECTORS = {
+  PRODUCT_GRID:
+    ".MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-1.mui-style-tuxzvu .MuiGrid-item",
+  PRODUCT_NAME: ".vertical-card_title__pMGg9",
+  PRODUCT_IMAGE: ".vertical-card_image__yNgf2",
+  PRODUCT_PRICE: ".vertical-card_amount__80Zwk",
+  PRODUCT_SAVE_PRICE:
+    "section:nth-child(2) > p.vertical-card_value__2EBnX > span.vertical-card_amount__80Zwk",
+  PRODUCT_VARIANT:
+    "#demo-customized-select .bootstrap-select_option__SB_Xy span:first-child",
 };
 
 export const BLINKIT_CONFIG = {
@@ -31,18 +43,6 @@ export const BLINKIT_SELECTORS = {
   PINCODE_INPUT: ".LocationSearchBox__InputSelect-sc-1k8u6a6-0.fZCGlI",
   PINCODE_SELECT:
     ".LocationSearchList__LocationListContainer-sc-93rfr7-0.lcVvPT .LocationSearchList__LocationLabel-sc-93rfr7-2.FUlwF",
-};
-
-export const SELECTORS = {
-  PRODUCT_GRID:
-    ".MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-1.mui-style-tuxzvu .MuiGrid-item",
-  PRODUCT_NAME: ".vertical-card_title__pMGg9",
-  PRODUCT_IMAGE: ".vertical-card_image__yNgf2",
-  PRODUCT_PRICE: ".vertical-card_amount__80Zwk",
-  PRODUCT_SAVE_PRICE:
-    "section:nth-child(2) > p.vertical-card_value__2EBnX > span.vertical-card_amount__80Zwk",
-  PRODUCT_VARIANT:
-    "#demo-customized-select .bootstrap-select_option__SB_Xy span:first-child",
 };
 
 export const ZEPTO_CONFIG = {

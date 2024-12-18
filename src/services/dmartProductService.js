@@ -1,5 +1,5 @@
 import puppeteer from "puppeteer";
-import { SCRAPER_CONFIG, SELECTORS } from "../config/config.js";
+import { DMART_CONFIG, DMART_SELECTORS } from "../config/config.js";
 import {
   writeJsonFile,
   delay,
@@ -7,18 +7,18 @@ import {
   readJsonFile,
 } from "../utils/fileUtils.js";
 
-export class ProductService {
+export class DmartProductService {
   async scrapeProducts(categories) {
     // Check if products data already exists
-    if (fileExists(SCRAPER_CONFIG.PRODUCTS_FILE)) {
-      const existingData = readJsonFile(SCRAPER_CONFIG.PRODUCTS_FILE);
+    if (fileExists(DMART_CONFIG.PRODUCTS_FILE)) {
+      const existingData = readJsonFile(DMART_CONFIG.PRODUCTS_FILE);
       if (existingData) {
         console.log("✔ Products data already exists, skipping scraping");
         return existingData;
       }
     }
 
-    const browser = await puppeteer.launch(SCRAPER_CONFIG.BROWSER_CONFIG);
+    const browser = await puppeteer.launch(DMART_CONFIG.BROWSER_CONFIG);
     const allProducts = {};
 
     try {
@@ -39,11 +39,11 @@ export class ProductService {
           console.log(`⚠️ No products found in ${category.name}`);
         }
 
-        await delay(SCRAPER_CONFIG.DELAY_BETWEEN_REQUESTS);
+        await delay(DMART_CONFIG.DELAY_BETWEEN_REQUESTS);
       }
 
-      writeJsonFile(SCRAPER_CONFIG.PRODUCTS_FILE, allProducts);
-      console.log("All products saved to", SCRAPER_CONFIG.PRODUCTS_FILE);
+      writeJsonFile(DMART_CONFIG.PRODUCTS_FILE, allProducts);
+      console.log("All products saved to", DMART_CONFIG.PRODUCTS_FILE);
       return allProducts;
     } catch (error) {
       console.error("Error scraping products:", error.message);
@@ -57,14 +57,14 @@ export class ProductService {
     try {
       console.log(`Scraping products for category: ${category.name}`);
       await page.goto(
-        `${SCRAPER_CONFIG.BASE_URL}/category/${category.seoToken}`,
+        `${DMART_CONFIG.BASE_URL}/category/${category.seoToken}`,
         {
           waitUntil: "networkidle0",
         }
       );
 
       // Wait for initial products to load
-      await page.waitForSelector(SELECTORS.PRODUCT_GRID);
+      await page.waitForSelector(DMART_SELECTORS.PRODUCT_GRID);
 
       // Keep scrolling and collecting products until no new products are found
       let previousHeight = 0;
@@ -154,6 +154,6 @@ export class ProductService {
       });
 
       return products;
-    }, SELECTORS);
+    }, DMART_SELECTORS);
   }
 }

@@ -1,5 +1,5 @@
-import { CategoryService } from "./services/categoryService.js";
-import { ProductService } from "./services/productService.js";
+import { DmartCategoryService } from "./services/dmartCategoryService.js";
+import { DmartProductService } from "./services/dmartProductService.js";
 import { BlinkitCategoryService } from "./services/blinkitCategoryService.js";
 import { BlinkitProductService } from "./services/blinkitProductService.js";
 import { ZeptoCategoryService } from "./services/zeptoCategoryService.js";
@@ -8,12 +8,12 @@ import { ZeptoProductService } from "./services/zeptoProductService.js";
 const main = async () => {
   try {
     // DMart scraping
-    const categoryService = new CategoryService();
-    const productService = new ProductService();
+    const dmartCategoryService = new DmartCategoryService();
+    const dmartpProductService = new DmartProductService();
 
-    const categories = await categoryService.fetchCategories();
+    const categories = await dmartCategoryService.fetchCategories();
     if (categories) {
-      await productService.scrapeProducts(categories);
+      await dmartpProductService.scrapeProducts(categories);
     }
 
     // Blinkit scraping
