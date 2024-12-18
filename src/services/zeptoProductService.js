@@ -24,6 +24,11 @@ export class ZeptoProductService {
       const productElements = document.querySelectorAll(selectors.PRODUCT_ITEM);
 
       return Array.from(productElements).map((product) => {
+        const id = `${subcategory.name
+          .toLowerCase()
+          .replace(/[^a-z0-9]/g, "-")}-${name
+          .toLowerCase()
+          .replace(/[^a-z0-9]/g, "-")}-${Math.random().toString(36)}`;
         const image = product.querySelector(selectors.PRODUCT_IMAGE);
         const srcset = image.getAttribute("srcset");
 
@@ -34,6 +39,7 @@ export class ZeptoProductService {
         // Get variant
         const variantElement = product.querySelector(selectors.PRODUCT_VARIANT);
         const variant = variantElement ? variantElement.textContent.trim() : "";
+        // Create unique ID by combining category name, product name and index
 
         // Get prices
         const currentPriceElement = product.querySelector(
@@ -51,6 +57,7 @@ export class ZeptoProductService {
           : "";
 
         return {
+          id,
           name,
           variant,
           currentPrice,

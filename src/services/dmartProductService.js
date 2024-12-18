@@ -109,7 +109,7 @@ export class DmartProductService {
         }
 
         await delay(1000);
-        products = await this.extractProducts(page);
+        products = await this.extractProducts(page, category.name);
         console.log(`Found ${products.length} products so far...`);
       }
 
@@ -123,42 +123,56 @@ export class DmartProductService {
     }
   }
 
-  async extractProducts(page) {
-    return await page.evaluate((selectors) => {
-      const products = [];
-      const productGrids = document.querySelectorAll(selectors.PRODUCT_GRID);
+  async extractProducts(page, categoryName) {
+    return await page.evaluate(
+      (selectors, category) => {
+        const products = [];
+        const productGrids = document.querySelectorAll(selectors.PRODUCT_GRID);
 
-      productGrids.forEach((productGrid) => {
-        try {
-          const name = productGrid.querySelector(
-            selectors.PRODUCT_NAME
-          )?.textContent;
-          const image = productGrid.querySelector(selectors.PRODUCT_IMAGE)?.src;
-          const price = Number(
-            productGrid.querySelector(selectors.PRODUCT_PRICE)?.textContent
-          );
-          const savePrice = Number(
-            productGrid.querySelector(selectors.PRODUCT_SAVE_PRICE)?.textContent
-          );
-          const variant = productGrid
-            .querySelector(selectors.PRODUCT_VARIANT)
-            ?.textContent.trim();
+        productGrids.forEach((productGrid, index) => {
+          try {
+            const name = productGrid.querySelector(
+              selectors.PRODUCT_NAME
+            )?.textContent;
+            const image = productGrid.querySelector(
+              selectors.PRODUCT_IMAGE
+            )?.src;
+            const currentPrice = Number(
+              productGrid.querySelector(selectors.PRODUCT_CURRENT_PRICE)
+                ?.textContent
+            );
+            const actualPrice = Number(
+              productGrid.querySelector(selectors.PRODUCT_ACTUAL_PRICE)
+                ?.textContent
+            );
+            const variant = productGrid
+              .querySelector(selectors.PRODUCT_VARIANT)
+              ?.textContent.trim();
 
-          if (name && image && price) {
-            products.push({
-              name,
-              image,
-              price,
-              savePrice,
-              variant,
-            });
+            if (name && image && currentPrice) {
+              // Create unique ID by combining category, name and variant
+              const id = `${category}_${name}_${variant}`
+                .toLowerCase()
+                .replace(/[^a-z0-9]/g, "_");
+
+              products.push({
+                id,
+                name,
+                image,
+                currentPrice,
+                actualPrice,
+                variant,
+              });
+            }
+          } catch (error) {
+            console.log("Error parsing product:", error.message);
           }
-        } catch (error) {
-          console.log("Error parsing product:", error.message);
-        }
-      });
+        });
 
-      return products;
-    }, DMART_SELECTORS);
+        return products;
+      },
+      DMART_SELECTORS,
+      categoryName
+    );
   }
 }

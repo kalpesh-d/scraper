@@ -16,8 +16,8 @@ export const DMART_SELECTORS = {
     ".MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-1.mui-style-tuxzvu .MuiGrid-item",
   PRODUCT_NAME: ".vertical-card_title__pMGg9",
   PRODUCT_IMAGE: ".vertical-card_image__yNgf2",
-  PRODUCT_PRICE: ".vertical-card_amount__80Zwk",
-  PRODUCT_SAVE_PRICE:
+  PRODUCT_ACTUAL_PRICE: ".vertical-card_amount__80Zwk",
+  PRODUCT_CURRENT_PRICE:
     "section:nth-child(2) > p.vertical-card_value__2EBnX > span.vertical-card_amount__80Zwk",
   PRODUCT_VARIANT:
     "#demo-customized-select .bootstrap-select_option__SB_Xy span:first-child",

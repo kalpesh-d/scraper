@@ -19,17 +19,6 @@ export class BlinkitProductService {
 
       const page = await browser.newPage();
 
-      // Block unnecessary resources
-      await page.setRequestInterception(true);
-      page.on("request", (request) => {
-        const resourceType = request.resourceType();
-        if (["stylesheet", "font", "media"].includes(resourceType)) {
-          request.abort();
-        } else {
-          request.continue();
-        }
-      });
-
       for (const category of categories) {
         const categoryProducts = await this.scrapeCategoryProducts(
           page,
@@ -56,14 +45,7 @@ export class BlinkitProductService {
 
   async scrapeCategoryProducts(page, category) {
     try {
-      // Set shorter timeout and disable unnecessary features
-      await page.setDefaultNavigationTimeout(30000);
-      await page.setJavaScriptEnabled(true);
-
-      await page.goto(category.url, {
-        waitUntil: "domcontentloaded",
-        timeout: 30000,
-      });
+      await page.goto(category.url, { waitUntil: "networkidle0" });
 
       // Check if the category has no products
       const noProductsSelector = ".plp__prouct--not-found-text";
@@ -74,36 +56,36 @@ export class BlinkitProductService {
       }
 
       await page.waitForSelector(
-        ".ProductsContainer__ProductListContainer-sc-1k8vkvc-0",
-        { timeout: 30000 }
+        ".ProductsContainer__ProductListContainer-sc-1k8vkvc-0"
       );
 
       let products = [];
       let lastProductCount = 0;
       let noNewProductsCount = 0;
-      const maxNoNewProductsAttempts = 2;
+      const maxNoNewProductsAttempts = 1;
 
       while (noNewProductsCount < maxNoNewProductsAttempts) {
         // Scroll 100vh in each attempt
         await page.evaluate(async () => {
           const viewportHeight = window.innerHeight;
-          const scrollAmount = viewportHeight * 1;
+          const scrollAmount = viewportHeight * 1; // 100vh
+
           window.scrollBy({
             top: scrollAmount,
-            behavior: "auto",
+            behavior: "smooth",
           });
 
-          await new Promise((resolve) => setTimeout(resolve, 1000)); // Increased wait time
+          await new Promise((resolve) => setTimeout(resolve, 500));
         });
 
-        await delay(1000); // Increased delay for content to load
+        await delay(500);
 
-        const currentProducts = await this.extractProducts(page);
+        const currentProducts = await this.extractProducts(page, category.name);
 
         if (currentProducts.length > lastProductCount) {
           products = currentProducts;
           lastProductCount = currentProducts.length;
-          noNewProductsCount = 0;
+          noNewProductsCount = 0; // Reset counter as we found new products
         } else {
           noNewProductsCount++;
         }
@@ -119,17 +101,15 @@ export class BlinkitProductService {
     }
   }
 
-  async extractProducts(page) {
-    return await page.evaluate(() => {
+  async extractProducts(page, categoryName) {
+    return await page.evaluate((categoryName) => {
       const products = [];
       const productGrid = document.querySelector(
         ".ProductsContainer__ProductListContainer-sc-1k8vkvc-0.gBBJEb"
       );
 
-      if (!productGrid) return products;
-
       const productElements = productGrid.children;
-      Array.from(productElements).forEach((productElement) => {
+      Array.from(productElements).forEach((productElement, index) => {
         try {
           const name = productElement.querySelector(
             ".Product__UpdatedTitle-sc-11dk8zk-9"
@@ -140,7 +120,7 @@ export class BlinkitProductService {
           )?.src;
           const variant = productElement
             .querySelector(".plp-product__quantity--box")
-            ?.textContent?.trim();
+            ?.textContent.trim();
           const priceContainer = productElement.querySelector(
             ".Product__UpdatedPriceAndAtcContainer-sc-11dk8zk-10 div"
           );
@@ -150,7 +130,15 @@ export class BlinkitProductService {
             priceContainer?.querySelector("div:first-child")?.textContent;
 
           if (name && image && currentPrice) {
+            // Create unique ID by combining category name, product name and index
+            const id = `${categoryName
+              .toLowerCase()
+              .replace(/[^a-z0-9]/g, "-")}-${name
+              .toLowerCase()
+              .replace(/[^a-z0-9]/g, "-")}-${index}`;
+
             products.push({
+              id,
               name,
               url,
               image,
@@ -165,6 +153,6 @@ export class BlinkitProductService {
       });
 
       return products;
-    });
+    }, categoryName);
   }
 }
