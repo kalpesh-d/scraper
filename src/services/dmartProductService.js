@@ -9,22 +9,43 @@ import {
 
 export class DmartProductService {
   async scrapeProducts(categories) {
-    // Check if products data already exists
-    if (fileExists(DMART_CONFIG.PRODUCTS_FILE)) {
-      const existingData = readJsonFile(DMART_CONFIG.PRODUCTS_FILE);
-      if (existingData) {
-        console.log("✔ Products data already exists, skipping scraping");
-        return existingData;
-      }
+    // Check if products file already exists and load existing data
+    let existingProducts = {};
+    if (await fileExists(DMART_CONFIG.PRODUCTS_FILE)) {
+      existingProducts = await readJsonFile(DMART_CONFIG.PRODUCTS_FILE);
     }
 
-    const browser = await puppeteer.launch(DMART_CONFIG.BROWSER_CONFIG);
-    const allProducts = {};
+    const browser = await puppeteer.launch({
+      ...DMART_CONFIG.BROWSER_CONFIG,
+      args: [
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage",
+      ],
+    });
 
     try {
       const page = await browser.newPage();
+      await page.setRequestInterception(true);
+
+      // Block unnecessary resources for faster loading
+      page.on("request", (req) => {
+        if (["stylesheet", "font", "media"].includes(req.resourceType())) {
+          req.abort();
+        } else {
+          req.continue();
+        }
+      });
+
+      const allProducts = { ...existingProducts };
 
       for (const category of categories.catArray) {
+        // Skip if category already exists in saved products
+        if (allProducts[category.name]) {
+          console.log(`⏩ Skipping ${category.name} - already scraped`);
+          continue;
+        }
+
         const categoryProducts = await this.scrapeCategoryProducts(
           page,
           category
@@ -35,6 +56,8 @@ export class DmartProductService {
           console.log(
             `✅ Scraped ${categoryProducts.length} products from ${category.name}`
           );
+          // Save after each category in case of interruption
+          writeJsonFile(DMART_CONFIG.PRODUCTS_FILE, allProducts);
         } else {
           console.log(`⚠️ No products found in ${category.name}`);
         }
@@ -42,7 +65,6 @@ export class DmartProductService {
         await delay(DMART_CONFIG.DELAY_BETWEEN_REQUESTS);
       }
 
-      writeJsonFile(DMART_CONFIG.PRODUCTS_FILE, allProducts);
       console.log("All products saved to", DMART_CONFIG.PRODUCTS_FILE);
       return allProducts;
     } catch (error) {
@@ -63,54 +85,37 @@ export class DmartProductService {
         }
       );
 
-      // Wait for initial products to load
       await page.waitForSelector(DMART_SELECTORS.PRODUCT_GRID);
+      await delay(2000); // Add initial delay for content load
 
-      // Keep scrolling and collecting products until no new products are found
-      let previousHeight = 0;
       let products = [];
-      let attempts = 0;
-      const maxAttempts = 50; // Safety limit to prevent infinite loops
+      let lastScrollHeight = 0;
+      let noNewScrollCount = 0;
+      const maxNoNewScrollAttempts = 1;
 
-      while (attempts < maxAttempts) {
-        // Scroll to bottom
-        await page.evaluate(() =>
-          window.scrollTo(0, document.body.scrollHeight)
-        );
-        await delay(1000); // Wait for new content to load
+      while (noNewScrollCount < maxNoNewScrollAttempts) {
+        // Scroll to bottom of page
+        const currentScrollHeight = await page.evaluate(async () => {
+          window.scrollTo(0, document.body.scrollHeight);
+          await new Promise((resolve) => setTimeout(resolve, 1000));
+          return document.body.scrollHeight;
+        });
 
-        // Get current scroll height
-        const currentHeight = await page.evaluate(
-          () => document.body.scrollHeight
-        );
-
-        // Get current products
-        const currentProducts = await this.extractProducts(page);
-
-        // console.log(
-        //   `✔ Found ${currentProducts.length} products so far in ${category.name}`
-        // );
-
-        // If no new products and scroll height hasn't changed, we've reached the end
-        if (
-          currentHeight === previousHeight ||
-          currentProducts.length === products.length
-        ) {
-          if (attempts > 2) {
-            // Check a few more times to ensure we've really reached the end
-            products = currentProducts;
-            break;
-          }
+        if (currentScrollHeight === lastScrollHeight) {
+          noNewScrollCount++;
         } else {
-          previousHeight = currentHeight;
-          products = currentProducts;
-          attempts = 0; // Reset attempts if we found new products
-          continue;
+          noNewScrollCount = 0;
+          lastScrollHeight = currentScrollHeight;
         }
 
-        attempts++;
+        await delay(1000);
+        products = await this.extractProducts(page);
+        console.log(`Found ${products.length} products so far...`);
       }
 
+      console.log(
+        `✅ Finished scraping ${category.name} with ${products.length} products`
+      );
       return products;
     } catch (error) {
       console.error(`Error scraping category ${category.name}:`, error.message);

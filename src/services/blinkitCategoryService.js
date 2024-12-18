@@ -12,9 +12,6 @@ export class BlinkitCategoryService {
     if (fileExists(BLINKIT_CONFIG.CATEGORIES_FILE)) {
       const existingData = readJsonFile(BLINKIT_CONFIG.CATEGORIES_FILE);
       if (existingData) {
-        console.log(
-          "✔ Blinkit categories data already exists, skipping scraping"
-        );
         return existingData;
       }
     }

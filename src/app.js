@@ -7,7 +7,6 @@ import { ZeptoProductService } from "./services/zeptoProductService.js";
 
 const main = async () => {
   try {
-    // DMart scraping
     const dmartCategoryService = new DmartCategoryService();
     const dmartpProductService = new DmartProductService();
 
@@ -16,21 +15,16 @@ const main = async () => {
       await dmartpProductService.scrapeProducts(categories);
     }
 
-    // Blinkit scraping
-    console.log("\n=== Starting Blinkit Scraping ===\n");
     const blinkitCategoryService = new BlinkitCategoryService();
     const blinkitCategories = await blinkitCategoryService.fetchCategories();
 
-    // if (blinkitCategories) {
-    //   console.log("Successfully scraped Blinkit categories");
-    //   const blinkitProductService = new BlinkitProductService();
-    //   for (const categoryGroup of Object.values(blinkitCategories)) {
-    //     await blinkitProductService.scrapeProducts(categoryGroup);
-    //   }
-    // }
+    if (blinkitCategories) {
+      const blinkitProductService = new BlinkitProductService();
+      for (const categoryGroup of Object.values(blinkitCategories)) {
+        await blinkitProductService.scrapeProducts(categoryGroup);
+      }
+    }
 
-    // Zepto scraping
-    console.log("\n=== Starting Zepto Scraping ===\n");
     const zeptoCategoryService = new ZeptoCategoryService();
     const zeptoCategories = await zeptoCategoryService.fetchCategories();
 

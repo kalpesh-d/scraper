@@ -7,7 +7,6 @@ export class DmartCategoryService {
     if (fileExists(DMART_CONFIG.CATEGORIES_FILE)) {
       const existingData = readJsonFile(DMART_CONFIG.CATEGORIES_FILE);
       if (existingData) {
-        console.log("✔ Categories data already exists, skipping scraping");
         return existingData;
       }
     }

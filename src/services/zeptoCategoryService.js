@@ -12,9 +12,6 @@ export class ZeptoCategoryService {
     if (fileExists(ZEPTO_CONFIG.CATEGORIES_FILE)) {
       const existingData = readJsonFile(ZEPTO_CONFIG.CATEGORIES_FILE);
       if (existingData) {
-        console.log(
-          "✔ Zepto categories data already exists, skipping scraping"
-        );
         return existingData;
       }
     }
