@@ -24,13 +24,10 @@ export class ZeptoProductService {
       const productElements = document.querySelectorAll(selectors.PRODUCT_ITEM);
 
       return Array.from(productElements).map((product) => {
-        const id = `${subcategory.name
-          .toLowerCase()
-          .replace(/[^a-z0-9]/g, "-")}-${name
-          .toLowerCase()
-          .replace(/[^a-z0-9]/g, "-")}-${Math.random().toString(36)}`;
         const image = product.querySelector(selectors.PRODUCT_IMAGE);
         const srcset = image.getAttribute("srcset");
+        const regex = /(https?:\/\/[^\s]+)/;
+        const imageUrl = srcset.match(regex)[0];
 
         // Get name
         const nameElement = product.querySelector(selectors.PRODUCT_NAME);
@@ -39,7 +36,11 @@ export class ZeptoProductService {
         // Get variant
         const variantElement = product.querySelector(selectors.PRODUCT_VARIANT);
         const variant = variantElement ? variantElement.textContent.trim() : "";
-        // Create unique ID by combining category name, product name and index
+
+        // Create unique ID
+        const id = `${name.toLowerCase().replace(/[^a-z0-9]/g, "-")}-${variant
+          .toLowerCase()
+          .replace(/[^a-z0-9]/g, "-")}`;
 
         // Get prices
         const currentPriceElement = product.querySelector(
@@ -62,7 +63,7 @@ export class ZeptoProductService {
           variant,
           currentPrice,
           actualPrice,
-          image: srcset,
+          image: imageUrl,
         };
       });
     }, ZEPTO_SELECTORS);

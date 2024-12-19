@@ -40,9 +40,7 @@ export class DmartProductService {
       const allProducts = { ...existingProducts };
 
       for (const category of categories.catArray) {
-        // Skip if category already exists in saved products
         if (allProducts[category.name]) {
-          console.log(`⏩ Skipping ${category.name} - already scraped`);
           continue;
         }
 
