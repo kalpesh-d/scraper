@@ -4,6 +4,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node src/app.js",
+    "migrate": "node scripts/migrate.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,6 +13,9 @@
   "description": "",
   "type": "module",
   "dependencies": {
+    "dotenv": "^16.4.7",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.1",
     "puppeteer": "^23.10.4"
   }
 }
