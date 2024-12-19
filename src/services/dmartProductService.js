@@ -11,7 +11,7 @@ export class DmartProductService {
   async scrapeProducts(categories) {
     // Check if products file already exists and load existing data
     let existingProducts = {};
-    if (await fileExists(DMART_CONFIG.PRODUCTS_FILE)) {
+    if (fileExists(DMART_CONFIG.PRODUCTS_FILE)) {
       existingProducts = await readJsonFile(DMART_CONFIG.PRODUCTS_FILE);
     }
 
@@ -135,14 +135,12 @@ export class DmartProductService {
             const image = productGrid.querySelector(
               selectors.PRODUCT_IMAGE
             )?.src;
-            const currentPrice = Number(
-              productGrid.querySelector(selectors.PRODUCT_CURRENT_PRICE)
-                ?.textContent
-            );
-            const actualPrice = Number(
-              productGrid.querySelector(selectors.PRODUCT_ACTUAL_PRICE)
-                ?.textContent
-            );
+            const currentPrice = productGrid.querySelector(
+              selectors.PRODUCT_CURRENT_PRICE
+            )?.textContent;
+            const actualPrice = productGrid.querySelector(
+              selectors.PRODUCT_ACTUAL_PRICE
+            )?.textContent;
             const variant = productGrid
               .querySelector(selectors.PRODUCT_VARIANT)
               ?.textContent.trim();
