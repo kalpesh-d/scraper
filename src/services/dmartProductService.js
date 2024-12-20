@@ -1,19 +1,13 @@
 import puppeteer from "puppeteer";
 import { DMART_CONFIG, DMART_SELECTORS } from "../config/config.js";
-import {
-  writeJsonFile,
-  delay,
-  fileExists,
-  readJsonFile,
-} from "../utils/fileUtils.js";
+import { delay } from "../utils/fileUtils.js";
+import { connectDB } from "../utils/dbUtils.js";
+import { upsertProduct } from "../utils/productUtils.js";
 
 export class DmartProductService {
   async scrapeProducts(categories) {
-    // Check if products file already exists and load existing data
-    let existingProducts = {};
-    if (fileExists(DMART_CONFIG.PRODUCTS_FILE)) {
-      existingProducts = await readJsonFile(DMART_CONFIG.PRODUCTS_FILE);
-    }
+    // Connect to MongoDB
+    await connectDB();
 
     const browser = await puppeteer.launch({
       ...DMART_CONFIG.BROWSER_CONFIG,
@@ -37,25 +31,16 @@ export class DmartProductService {
         }
       });
 
-      const allProducts = { ...existingProducts };
-
       for (const category of categories.catArray) {
-        if (allProducts[category.name]) {
-          continue;
-        }
-
         const categoryProducts = await this.scrapeCategoryProducts(
           page,
           category
         );
 
         if (categoryProducts.length > 0) {
-          allProducts[category.name] = categoryProducts;
           console.log(
             `✅ Scraped ${categoryProducts.length} products from ${category.name}`
           );
-          // Save after each category in case of interruption
-          writeJsonFile(DMART_CONFIG.PRODUCTS_FILE, allProducts);
         } else {
           console.log(`⚠️ No products found in ${category.name}`);
         }
@@ -63,8 +48,8 @@ export class DmartProductService {
         await delay(DMART_CONFIG.DELAY_BETWEEN_REQUESTS);
       }
 
-      console.log("All products saved to", DMART_CONFIG.PRODUCTS_FILE);
-      return allProducts;
+      console.log("Finished scraping all products");
+      return true;
     } catch (error) {
       console.error("Error scraping products:", error.message);
       return null;
@@ -84,15 +69,14 @@ export class DmartProductService {
       );
 
       await page.waitForSelector(DMART_SELECTORS.PRODUCT_GRID);
-      await delay(2000); // Add initial delay for content load
+      await delay(2000);
 
-      let products = [];
+      let processedProducts = [];
       let lastScrollHeight = 0;
       let noNewScrollCount = 0;
       const maxNoNewScrollAttempts = 1;
 
       while (noNewScrollCount < maxNoNewScrollAttempts) {
-        // Scroll to bottom of page
         const currentScrollHeight = await page.evaluate(async () => {
           window.scrollTo(0, document.body.scrollHeight);
           await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -107,14 +91,29 @@ export class DmartProductService {
         }
 
         await delay(1000);
-        products = await this.extractProducts(page, category.name);
-        console.log(`Found ${products.length} products so far...`);
+        const products = await this.extractProducts(page, category.name);
+
+        // Save each product to MongoDB
+        for (const product of products) {
+          if (!processedProducts.includes(product.id)) {
+            await upsertProduct(
+              {
+                ...product,
+                category: category.name,
+              },
+              "dmart"
+            );
+            processedProducts.push(product.id);
+          }
+        }
+
+        console.log(`Processed ${processedProducts.length} products so far...`);
       }
 
       console.log(
-        `✅ Finished scraping ${category.name} with ${products.length} products`
+        `✅ Finished scraping ${category.name} with ${processedProducts.length} products`
       );
-      return products;
+      return processedProducts;
     } catch (error) {
       console.error(`Error scraping category ${category.name}:`, error.message);
       return [];
@@ -145,19 +144,26 @@ export class DmartProductService {
               .querySelector(selectors.PRODUCT_VARIANT)
               ?.textContent.trim();
 
-            if (name && image && currentPrice) {
-              // Create unique ID by combining category, name and variant
-              const id = `${category}_${name}_${variant}`
-                .toLowerCase()
-                .replace(/[^a-z0-9]/g, "_");
+            const outOfStock = document.querySelector(
+              selectors.PRODUCT_OUT_OF_STOCK
+            )
+              ? true
+              : false;
+            // Create unique ID by combining category, name and variant
+            const id = `${category}_${name}_${variant}`
+              .toLowerCase()
+              .replace(/[^a-z0-9]/g, "_");
 
+            if (name && image && currentPrice) {
               products.push({
                 id,
                 name,
                 image,
+                platform: "dmart",
                 currentPrice,
                 actualPrice,
                 variant,
+                available: !outOfStock,
               });
             }
           } catch (error) {

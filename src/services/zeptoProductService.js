@@ -1,74 +1,83 @@
 import puppeteer from "puppeteer";
 import { ZEPTO_CONFIG, ZEPTO_SELECTORS } from "../config/config.js";
-import {
-  fileExists,
-  readJsonFile,
-  writeJsonFile,
-  delay,
-} from "../utils/fileUtils.js";
+import { delay } from "../utils/fileUtils.js";
+import { upsertProduct } from "../utils/productUtils.js";
 
 export class ZeptoProductService {
   generateProductUrl(category, subcategory) {
-    // Convert category name to URL format (lowercase, spaces to hyphens, remove special chars)
     const formattedName = category.name
-      .toLowerCase() // Convert to lowercase
-      .replace(/&/g, "") // Remove &
-      .replace(/\s+/g, "-") // Replace one or more spaces with single hyphen
-      .trim(); // Remove leading/trailing whitespace
+      .toLowerCase()
+      .replace(/&/g, "")
+      .replace(/\s+/g, "-")
+      .trim();
 
     return `${ZEPTO_CONFIG.BASE_URL}/cn/${formattedName}/cid/${category.id}/scid/${subcategory.id}`;
   }
 
   async extractProducts(page) {
-    const products = await page.evaluate((selectors) => {
-      const productElements = document.querySelectorAll(selectors.PRODUCT_ITEM);
+    return await page.evaluate((selectors) => {
+      const products = [];
+      const productGrids = document.querySelectorAll(selectors.PRODUCT_ITEM);
 
-      return Array.from(productElements).map((product) => {
-        const image = product.querySelector(selectors.PRODUCT_IMAGE);
-        const srcset = image.getAttribute("srcset");
-        const regex = /(https?:\/\/[^\s]+)/;
-        const imageUrl = srcset.match(regex)[0];
+      productGrids.forEach((product) => {
+        try {
+          const image = product.querySelector(selectors.PRODUCT_IMAGE);
+          const srcset = image.getAttribute("srcset");
+          const regex = /(https?:\/\/[^\s]+)/;
+          const imageUrl = srcset.match(regex)[0];
 
-        // Get name
-        const nameElement = product.querySelector(selectors.PRODUCT_NAME);
-        const name = nameElement ? nameElement.textContent.trim() : "";
+          const nameElement = product.querySelector(selectors.PRODUCT_NAME);
+          const name = nameElement ? nameElement.textContent.trim() : "";
 
-        // Get variant
-        const variantElement = product.querySelector(selectors.PRODUCT_VARIANT);
-        const variant = variantElement ? variantElement.textContent.trim() : "";
+          const variantElement = product.querySelector(
+            selectors.PRODUCT_VARIANT
+          );
+          const variant = variantElement
+            ? variantElement.textContent.trim()
+            : "";
 
-        // Create unique ID
-        const id = `${name.toLowerCase().replace(/[^a-z0-9]/g, "-")}-${variant
-          .toLowerCase()
-          .replace(/[^a-z0-9]/g, "-")}`;
+          const id = `${name.toLowerCase().replace(/[^a-z0-9]/g, "-")}-${variant
+            .toLowerCase()
+            .replace(/[^a-z0-9]/g, "-")}`;
 
-        // Get prices
-        const currentPriceElement = product.querySelector(
-          selectors.CURRENT_PRICE
-        );
-        const actualPriceElement = product.querySelector(
-          selectors.ACTUAL_PRICE
-        );
+          const currentPriceElement = product.querySelector(
+            selectors.CURRENT_PRICE
+          );
+          const actualPriceElement = product.querySelector(
+            selectors.ACTUAL_PRICE
+          );
 
-        const currentPrice = currentPriceElement
-          ? currentPriceElement.textContent.trim()
-          : "";
-        const actualPrice = actualPriceElement
-          ? actualPriceElement.textContent.trim()
-          : "";
+          const currentPrice = currentPriceElement
+            ? currentPriceElement.textContent.trim()
+            : "";
+          const actualPrice = actualPriceElement
+            ? actualPriceElement.textContent.trim()
+            : "";
 
-        return {
-          id,
-          name,
-          variant,
-          currentPrice,
-          actualPrice,
-          image: imageUrl,
-        };
+          const outOfStock = product.querySelector(
+            ".relative.my-3.rounded-t-xl.rounded-b-md.group.mb-12"
+          );
+          const available = !outOfStock;
+
+          if (name && imageUrl && currentPrice) {
+            products.push({
+              id,
+              name,
+              variant,
+              platform: "zepto",
+              currentPrice,
+              actualPrice,
+              image: imageUrl,
+              available,
+            });
+          }
+        } catch (error) {
+          console.log("Error parsing product:", error.message);
+        }
       });
-    }, ZEPTO_SELECTORS);
 
-    return products;
+      return products;
+    }, ZEPTO_SELECTORS);
   }
 
   async scrapeCategoryProducts(page, category, subcategory) {
@@ -79,16 +88,14 @@ export class ZeptoProductService {
       await page.goto(url, { waitUntil: "networkidle0" });
       await delay(2000);
 
-      // Wait for products container
       await page.waitForSelector(ZEPTO_SELECTORS.PRODUCTS_CONTAINER);
 
-      let products = [];
+      let processedProducts = [];
       let lastScrollHeight = 0;
       let noNewScrollCount = 0;
       const maxNoNewScrollAttempts = 1;
 
       while (noNewScrollCount < maxNoNewScrollAttempts) {
-        // Scroll to bottom of page
         const currentScrollHeight = await page.evaluate(async () => {
           window.scrollTo(0, document.body.scrollHeight);
           await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -103,14 +110,29 @@ export class ZeptoProductService {
         }
 
         await delay(1000);
-        products = await this.extractProducts(page);
-        console.log(`Found ${products.length} products so far...`);
+        const products = await this.extractProducts(page);
+
+        // Save each product to MongoDB
+        for (const product of products) {
+          if (!processedProducts.includes(product.id)) {
+            await upsertProduct(
+              {
+                ...product,
+                category: subcategory.name,
+              },
+              "zepto"
+            );
+            processedProducts.push(product.id);
+          }
+        }
+
+        console.log(`Processed ${processedProducts.length} products so far...`);
       }
 
       console.log(
-        `✅ Finished scraping ${subcategory.name} with ${products.length} products`
+        `✅ Finished scraping ${subcategory.name} with ${processedProducts.length} products`
       );
-      return products;
+      return processedProducts;
     } catch (error) {
       console.error(
         `Error scraping products for ${subcategory.name}:`,
@@ -143,33 +165,19 @@ export class ZeptoProductService {
         }
       });
 
-      let allProducts = {};
-
       for (const category of categories.categories) {
         console.log(`\nProcessing category: ${category.name}`);
 
-        // Process subcategories sequentially instead of in parallel
+        // Process subcategories sequentially
         for (const subcategory of category.subcategories) {
-          const products = await this.scrapeCategoryProducts(
-            page,
-            category,
-            subcategory
-          );
+          await this.scrapeCategoryProducts(page, category, subcategory);
 
-          // Store products for this subcategory
-          allProducts[subcategory.name] = products;
-
-          // Write data to file
-          writeJsonFile(ZEPTO_CONFIG.PRODUCTS_FILE, allProducts);
-
-          console.log(`Saved products for ${subcategory.name}`);
           await delay(200); // Add delay between subcategories
         }
       }
 
-      console.log(`\n✅ Finished scraping all categories`);
-
-      return allProducts;
+      console.log(`\n✅ Finished scraping all Zepto categories`);
+      return true;
     } catch (error) {
       console.error("Error scraping Zepto products:", error.message);
       return null;

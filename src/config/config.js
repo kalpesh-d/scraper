@@ -21,6 +21,7 @@ export const DMART_SELECTORS = {
     "section:nth-child(2) > p.vertical-card_value__2EBnX > span.vertical-card_amount__80Zwk",
   PRODUCT_VARIANT:
     "#demo-customized-select .bootstrap-select_option__SB_Xy span:first-child",
+  PRODUCT_OUT_OF_STOCK: ".vertical-card_info___ZmV_",
 };
 
 export const BLINKIT_CONFIG = {

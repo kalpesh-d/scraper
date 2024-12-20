@@ -1,22 +1,13 @@
 import puppeteer from "puppeteer";
 import { BLINKIT_CONFIG } from "../config/config.js";
-import {
-  fileExists,
-  readJsonFile,
-  writeJsonFile,
-  delay,
-} from "../utils/fileUtils.js";
+import { delay } from "../utils/fileUtils.js";
+import { upsertProduct } from "../utils/productUtils.js";
 
 export class BlinkitProductService {
   async scrapeProducts(categories) {
     const browser = await puppeteer.launch(BLINKIT_CONFIG.BROWSER_CONFIG);
-    let allProducts = {};
 
     try {
-      if (fileExists(BLINKIT_CONFIG.PRODUCTS_FILE)) {
-        allProducts = readJsonFile(BLINKIT_CONFIG.PRODUCTS_FILE) || {};
-      }
-
       const page = await browser.newPage();
 
       for (const category of categories) {
@@ -24,17 +15,14 @@ export class BlinkitProductService {
           page,
           category
         );
-        if (categoryProducts.length > 0) {
-          allProducts[category.name] = categoryProducts;
-        } else {
+        if (categoryProducts.length === 0) {
           console.log(`⚠️ No products found in ${category.name}`);
         }
         await delay(BLINKIT_CONFIG.DELAY_BETWEEN_REQUESTS);
       }
 
-      writeJsonFile(BLINKIT_CONFIG.PRODUCTS_FILE, allProducts);
-      console.log("All products saved to", BLINKIT_CONFIG.PRODUCTS_FILE);
-      return allProducts;
+      console.log("✅ Finished scraping all Blinkit products");
+      return true;
     } catch (error) {
       console.error("Error scraping Blinkit products:", error.message);
       return null;
@@ -59,10 +47,10 @@ export class BlinkitProductService {
         ".ProductsContainer__ProductListContainer-sc-1k8vkvc-0"
       );
 
-      let products = [];
+      let processedProducts = [];
       let lastProductCount = 0;
       let noNewProductsCount = 0;
-      const maxNoNewProductsAttempts = 1;
+      const maxNoNewProductsAttempts = 3; // Increased attempts to ensure full page load
 
       while (noNewProductsCount < maxNoNewProductsAttempts) {
         // Scroll 100vh in each attempt
@@ -75,26 +63,41 @@ export class BlinkitProductService {
             behavior: "smooth",
           });
 
-          await new Promise((resolve) => setTimeout(resolve, 500));
+          await new Promise((resolve) => setTimeout(resolve, 500)); // Increased wait time
         });
 
-        await delay(500);
+        await delay(500); // Increased delay
 
         const currentProducts = await this.extractProducts(page, category.name);
 
+        // Save new products to MongoDB
+        for (const product of currentProducts) {
+          if (!processedProducts.includes(product.id)) {
+            await upsertProduct(
+              {
+                ...product,
+                category: category.name,
+              },
+              "blinkit"
+            );
+            processedProducts.push(product.id);
+          }
+        }
+
         if (currentProducts.length > lastProductCount) {
-          products = currentProducts;
           lastProductCount = currentProducts.length;
           noNewProductsCount = 0; // Reset counter as we found new products
         } else {
           noNewProductsCount++;
         }
+
+        console.log(`Processed ${processedProducts.length} products so far...`);
       }
 
       console.log(
-        `✅ Finished scraping ${category.name} with ${products.length} products`
+        `✅ Finished scraping ${category.name} with ${processedProducts.length} products`
       );
-      return products;
+      return processedProducts;
     } catch (error) {
       console.error(`Error scraping category ${category.name}:`, error.message);
       return [];
@@ -102,19 +105,20 @@ export class BlinkitProductService {
   }
 
   async extractProducts(page, categoryName) {
-    return await page.evaluate((categoryName) => {
+    return await page.evaluate(() => {
       const products = [];
       const productGrid = document.querySelector(
         ".ProductsContainer__ProductListContainer-sc-1k8vkvc-0.gBBJEb"
       );
 
+      if (!productGrid) return products;
+
       const productElements = productGrid.children;
-      Array.from(productElements).forEach((productElement, index) => {
+      Array.from(productElements).forEach((productElement) => {
         try {
           const name = productElement.querySelector(
             ".Product__UpdatedTitle-sc-11dk8zk-9"
           )?.textContent;
-          const url = productElement.href;
           const image = productElement.querySelector(
             ".Imagestyles__ImageContainer-sc-1u3ccmn-0 img"
           )?.src;
@@ -128,23 +132,27 @@ export class BlinkitProductService {
             priceContainer?.querySelector("div:nth-child(2)")?.textContent;
           const currentPrice =
             priceContainer?.querySelector("div:first-child")?.textContent;
+          const outOfStock = productElement.querySelector(
+            ".AddToCart__UpdatedOutOfStockTag-sc-17ig0e3-4.bxVUKb"
+          )
+            ? true
+            : false;
+
+          // Create unique ID by combining name and variant
+          const id = `${name}_${variant || ""}`
+            .toLowerCase()
+            .replace(/[^a-z0-9]/g, "_");
 
           if (name && image && currentPrice) {
-            // Create unique ID by combining category name, product name and index
-            const id = `${categoryName
-              .toLowerCase()
-              .replace(/[^a-z0-9]/g, "-")}-${name
-              .toLowerCase()
-              .replace(/[^a-z0-9]/g, "-")}-${index}`;
-
             products.push({
               id,
               name,
-              url,
               image,
               variant,
+              platform: "blinkit",
               actualPrice,
               currentPrice,
+              available: !outOfStock,
             });
           }
         } catch (error) {
@@ -153,6 +161,6 @@ export class BlinkitProductService {
       });
 
       return products;
-    }, categoryName);
+    });
   }
 }

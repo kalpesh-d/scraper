@@ -4,9 +4,13 @@ import { BlinkitCategoryService } from "./services/blinkitCategoryService.js";
 import { BlinkitProductService } from "./services/blinkitProductService.js";
 import { ZeptoCategoryService } from "./services/zeptoCategoryService.js";
 import { ZeptoProductService } from "./services/zeptoProductService.js";
+import { connectDB, disconnectDB } from "./utils/dbUtils.js";
 
 const main = async () => {
   try {
+    // Connect to MongoDB at start
+    await connectDB();
+
     const dmartCategoryService = new DmartCategoryService();
     const dmartpProductService = new DmartProductService();
 
@@ -34,7 +38,15 @@ const main = async () => {
     }
   } catch (error) {
     console.error("Application error:", error.message);
+  } finally {
+    await disconnectDB();
   }
 };
+
+process.on("SIGINT", async () => {
+  console.log("\nGracefully shutting down...");
+  await disconnectDB();
+  process.exit(0);
+});
 
 main();
