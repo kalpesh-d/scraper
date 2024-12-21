@@ -21,6 +21,412 @@
       "url": "https://blinkit.com/cn/sausage-salami-ham/cid/4/1388"
     }
   ],
+  "Pet Care": [
+    {
+      "name": "Dog Food & Treats",
+      "url": "https://blinkit.com/cn/dog-food-treats/cid/5/133"
+    },
+    {
+      "name": "Cat Food & Treats",
+      "url": "https://blinkit.com/cn/cat-food-treats/cid/5/134"
+    },
+    {
+      "name": "Pet Grooming & Accessories",
+      "url": "https://blinkit.com/cn/pet-grooming-accessories/cid/5/403"
+    },
+    {
+      "name": "Cat Treats",
+      "url": "https://blinkit.com/cn/cat-treats/cid/5/291"
+    },
+    {
+      "name": "Accessories & Other Supplies",
+      "url": "https://blinkit.com/cn/accessories-other-supplies/cid/5/192"
+    },
+    {
+      "name": "Dog Treat",
+      "url": "https://blinkit.com/cn/dog-treat/cid/5/227"
+    },
+    {
+      "name": "Other Pet Supplies",
+      "url": "https://blinkit.com/cn/other-pet-supplies/cid/5/1466"
+    },
+    {
+      "name": "Pet Health & Supplements",
+      "url": "https://blinkit.com/cn/pet-health-supplements/cid/5/992"
+    },
+    {
+      "name": "Pet Litter",
+      "url": "https://blinkit.com/cn/pet-litter/cid/5/991"
+    },
+    {
+      "name": "Pet Toys",
+      "url": "https://blinkit.com/cn/pet-toys/cid/5/1614"
+    }
+  ],
+  "Baby Care": [
+    {
+      "name": "Baby Diapers",
+      "url": "https://blinkit.com/cn/baby-diapers/cid/7/84"
+    },
+    {
+      "name": "Baby Feeding Needs",
+      "url": "https://blinkit.com/cn/baby-feeding-needs/cid/7/169"
+    },
+    {
+      "name": "Baby Wipes",
+      "url": "https://blinkit.com/cn/baby-wipes/cid/7/996"
+    },
+    {
+      "name": "Hygiene",
+      "url": "https://blinkit.com/cn/hygiene/cid/7/85"
+    },
+    {
+      "name": "Baby's Health & Safety Tools",
+      "url": "https://blinkit.com/cn/babys-health-safety-tools/cid/7/997"
+    },
+    {
+      "name": "Oral & Nasal Care",
+      "url": "https://blinkit.com/cn/oral-nasal-care/cid/7/998"
+    },
+    {
+      "name": "Baby Gift Hampers",
+      "url": "https://blinkit.com/cn/baby-gift-hampers/cid/7/999"
+    },
+    {
+      "name": "Diapers & Wipes",
+      "url": "https://blinkit.com/cn/diapers-wipes/cid/7/1000"
+    },
+    {
+      "name": "Baby Bathing Needs",
+      "url": "https://blinkit.com/cn/baby-bathing-needs/cid/7/1001"
+    },
+    {
+      "name": "Baby Skin & Hair Care",
+      "url": "https://blinkit.com/cn/baby-skin-hair-care/cid/7/1002"
+    },
+    {
+      "name": "Baby Food",
+      "url": "https://blinkit.com/cn/baby-food/cid/7/1590"
+    },
+    {
+      "name": "Mom Care",
+      "url": "https://blinkit.com/cn/mom-care/cid/7/1967"
+    },
+    {
+      "name": "Other Diapering Needs",
+      "url": "https://blinkit.com/cn/other-diapering-needs/cid/7/1966"
+    },
+    {
+      "name": "Nursing",
+      "url": "https://blinkit.com/cn/nursing/cid/7/597"
+    }
+  ],
+  "Sweet Tooth": [
+    {
+      "name": "Flavoured Yogurts",
+      "url": "https://blinkit.com/cn/flavoured-yogurts/cid/9/106"
+    },
+    {
+      "name": "Ice Cream & Frozen Dessert",
+      "url": "https://blinkit.com/cn/ice-cream-frozen-dessert/cid/9/183"
+    },
+    {
+      "name": "Indian Sweets",
+      "url": "https://blinkit.com/cn/indian-sweets/cid/9/943"
+    },
+    {
+      "name": "Chocolates",
+      "url": "https://blinkit.com/cn/chocolates/cid/9/944"
+    },
+    {
+      "name": "Chocolate Packs",
+      "url": "https://blinkit.com/cn/chocolate-packs/cid/9/1173"
+    },
+    {
+      "name": "Chocolate Syrup",
+      "url": "https://blinkit.com/cn/chocolate-syrup/cid/9/1289"
+    },
+    {
+      "name": "Candies & Gum",
+      "url": "https://blinkit.com/cn/candies-gum/cid/9/1930"
+    },
+    {
+      "name": "Mouth Fresheners",
+      "url": "https://blinkit.com/cn/mouth-fresheners/cid/9/1933"
+    },
+    {
+      "name": "Cakes and Rolls",
+      "url": "https://blinkit.com/cn/cakes-and-rolls/cid/9/108"
+    },
+    {
+      "name": "Chocolate Bars",
+      "url": "https://blinkit.com/cn/chocolate-bars/cid/9/1736"
+    },
+    {
+      "name": "Filled Bars",
+      "url": "https://blinkit.com/cn/filled-bars/cid/9/1737"
+    },
+    {
+      "name": "Wafer Chocolates",
+      "url": "https://blinkit.com/cn/wafer-chocolates/cid/9/1172"
+    },
+    {
+      "name": "Syrups",
+      "url": "https://blinkit.com/cn/syrups/cid/9/1298"
+    }
+  ],
+  "Tea, Coffee & Health Drinks": [
+    {
+      "name": "Vegan Drinks",
+      "url": "https://blinkit.com/cn/vegan-drinks/cid/12/87"
+    },
+    {
+      "name": "Tea",
+      "url": "https://blinkit.com/cn/tea/cid/12/957"
+    },
+    {
+      "name": "Health Drinks",
+      "url": "https://blinkit.com/cn/health-drinks/cid/12/960"
+    },
+    {
+      "name": "Herbal Drinks",
+      "url": "https://blinkit.com/cn/herbal-drinks/cid/12/1109"
+    },
+    {
+      "name": "Milk Drinks",
+      "url": "https://blinkit.com/cn/milk-drinks/cid/12/1184"
+    },
+    {
+      "name": "Coffee",
+      "url": "https://blinkit.com/cn/coffee/cid/12/1322"
+    },
+    {
+      "name": "Leaf & Dust Tea",
+      "url": "https://blinkit.com/cn/leaf-dust-tea/cid/12/25"
+    },
+    {
+      "name": "Black Tea",
+      "url": "https://blinkit.com/cn/black-tea/cid/12/1561"
+    },
+    {
+      "name": "Vegan Milk",
+      "url": "https://blinkit.com/cn/vegan-milk/cid/12/948"
+    },
+    {
+      "name": "Hot Chocolate Drink",
+      "url": "https://blinkit.com/cn/hot-chocolate-drink/cid/12/90"
+    },
+    {
+      "name": "Health Drinks & Supplements",
+      "url": "https://blinkit.com/cn/health-drinks-supplements/cid/12/21"
+    },
+    {
+      "name": "Chocolate Health Drinks",
+      "url": "https://blinkit.com/cn/chocolate-health-drinks/cid/12/1106"
+    },
+    {
+      "name": "Exotic & Flavoured Tea",
+      "url": "https://blinkit.com/cn/exotic-flavoured-tea/cid/12/1562"
+    },
+    {
+      "name": "Green Tea",
+      "url": "https://blinkit.com/cn/green-tea/cid/12/1104"
+    },
+    {
+      "name": "Roasted & Ground Coffee",
+      "url": "https://blinkit.com/cn/roasted-ground-coffee/cid/12/720"
+    },
+    {
+      "name": "Instant Coffee",
+      "url": "https://blinkit.com/cn/instant-coffee/cid/12/958"
+    },
+    {
+      "name": "Filter Coffee",
+      "url": "https://blinkit.com/cn/filter-coffee/cid/12/1589"
+    },
+    {
+      "name": "Coffee Bags",
+      "url": "https://blinkit.com/cn/coffee-bags/cid/12/1105"
+    }
+  ],
+  "Beauty & Cosmetics": [
+    {
+      "name": "Hair Care",
+      "url": "https://blinkit.com/cn/hair-care/cid/13/77"
+    },
+    {
+      "name": "Beauty and Makeup",
+      "url": "https://blinkit.com/cn/beauty-and-makeup/cid/13/98"
+    },
+    {
+      "name": "Eyeliner",
+      "url": "https://blinkit.com/cn/eyeliner/cid/13/100"
+    },
+    {
+      "name": "Mascara",
+      "url": "https://blinkit.com/cn/mascara/cid/13/102"
+    },
+    {
+      "name": "Lipstick",
+      "url": "https://blinkit.com/cn/lipstick/cid/13/1611"
+    },
+    {
+      "name": "BB & CC cream",
+      "url": "https://blinkit.com/cn/bb-cc-cream/cid/13/208"
+    },
+    {
+      "name": "Makeup brushes",
+      "url": "https://blinkit.com/cn/makeup-brushes/cid/13/215"
+    },
+    {
+      "name": "Compact",
+      "url": "https://blinkit.com/cn/compact/cid/13/218"
+    },
+    {
+      "name": "Foundation",
+      "url": "https://blinkit.com/cn/foundation/cid/13/207"
+    },
+    {
+      "name": "Nail color remover",
+      "url": "https://blinkit.com/cn/nail-color-remover/cid/13/1725"
+    },
+    {
+      "name": "After shave",
+      "url": "https://blinkit.com/cn/after-shave/cid/13/309"
+    },
+    {
+      "name": "Hair color",
+      "url": "https://blinkit.com/cn/hair-color/cid/13/247"
+    },
+    {
+      "name": "Nail color/paints",
+      "url": "https://blinkit.com/cn/nail-colorpaints/cid/13/1123"
+    },
+    {
+      "name": "Primer",
+      "url": "https://blinkit.com/cn/primer/cid/13/214"
+    },
+    {
+      "name": "Hair tools & accessories",
+      "url": "https://blinkit.com/cn/hair-tools-accessories/cid/13/159"
+    },
+    {
+      "name": "Eye accessories",
+      "url": "https://blinkit.com/cn/eye-accessories/cid/13/186"
+    },
+    {
+      "name": "Nail accessories",
+      "url": "https://blinkit.com/cn/nail-accessories/cid/13/170"
+    },
+    {
+      "name": "Body accessories",
+      "url": "https://blinkit.com/cn/body-accessories/cid/13/160"
+    },
+    {
+      "name": "Face Accessories",
+      "url": "https://blinkit.com/cn/face-accessories/cid/13/171"
+    },
+    {
+      "name": "Hair Serum",
+      "url": "https://blinkit.com/cn/hair-serum/cid/13/1604"
+    },
+    {
+      "name": "Hair Oil",
+      "url": "https://blinkit.com/cn/hair-oil/cid/13/1016"
+    },
+    {
+      "name": "Hair Mask",
+      "url": "https://blinkit.com/cn/hair-mask/cid/13/329"
+    },
+    {
+      "name": "Women's Razors & Trimmers",
+      "url": "https://blinkit.com/cn/womens-razors-trimmers/cid/13/339"
+    },
+    {
+      "name": "Hair Removal",
+      "url": "https://blinkit.com/cn/hair-removal/cid/13/703"
+    },
+    {
+      "name": "Facial Kit",
+      "url": "https://blinkit.com/cn/facial-kit/cid/13/344"
+    },
+    {
+      "name": "Lip Scrubs, Masks & Serums",
+      "url": "https://blinkit.com/cn/lip-scrubs-masks-serums/cid/13/369"
+    },
+    {
+      "name": "Lip Balm",
+      "url": "https://blinkit.com/cn/lip-balm/cid/13/276"
+    },
+    {
+      "name": "Eye Creams & Masks",
+      "url": "https://blinkit.com/cn/eye-creams-masks/cid/13/237"
+    },
+    {
+      "name": "Lip Tint",
+      "url": "https://blinkit.com/cn/lip-tint/cid/13/260"
+    },
+    {
+      "name": "Lip Primer",
+      "url": "https://blinkit.com/cn/lip-primer/cid/13/141"
+    },
+    {
+      "name": "Lip Liner",
+      "url": "https://blinkit.com/cn/lip-liner/cid/13/121"
+    },
+    {
+      "name": "Lip Gloss",
+      "url": "https://blinkit.com/cn/lip-gloss/cid/13/124"
+    },
+    {
+      "name": "Shampoo",
+      "url": "https://blinkit.com/cn/shampoo/cid/13/223"
+    },
+    {
+      "name": "Hair Spray, Gel & Wax",
+      "url": "https://blinkit.com/cn/hair-spray-gel-wax/cid/13/246"
+    },
+    {
+      "name": "Hair Oil, Masks & Serums",
+      "url": "https://blinkit.com/cn/hair-oil-masks-serums/cid/13/245"
+    },
+    {
+      "name": "Conditioners",
+      "url": "https://blinkit.com/cn/conditioners/cid/13/235"
+    },
+    {
+      "name": "Fragrance Gift Sets",
+      "url": "https://blinkit.com/cn/fragrance-gift-sets/cid/13/588"
+    },
+    {
+      "name": "Women's Fragrance",
+      "url": "https://blinkit.com/cn/womens-fragrance/cid/13/753"
+    },
+    {
+      "name": "Men's Fragrance",
+      "url": "https://blinkit.com/cn/mens-fragrance/cid/13/754"
+    },
+    {
+      "name": "Makeup Fixer",
+      "url": "https://blinkit.com/cn/makeup-fixer/cid/13/935"
+    },
+    {
+      "name": "Contour & Bronzer",
+      "url": "https://blinkit.com/cn/contour-bronzer/cid/13/248"
+    },
+    {
+      "name": "Concealer",
+      "url": "https://blinkit.com/cn/concealer/cid/13/213"
+    },
+    {
+      "name": "Toners & Mists",
+      "url": "https://blinkit.com/cn/toners-mists/cid/13/240"
+    },
+    {
+      "name": "Face Cream & Gel",
+      "url": "https://blinkit.com/cn/face-cream-gel/cid/13/164"
+    }
+  ],
   "Dairy, Bread & Eggs": [
     {
       "name": "Cheese",
@@ -259,6 +665,430 @@
       "url": "https://blinkit.com/cn/dried-peas/cid/16/1009"
     }
   ],
+  "Cleaning Essentials": [
+    {
+      "name": "Shoe Polish & Brush",
+      "url": "https://blinkit.com/cn/shoe-polish-brush/cid/18/57"
+    },
+    {
+      "name": "Detergent Powder & Bars",
+      "url": "https://blinkit.com/cn/detergent-powder-bars/cid/18/983"
+    },
+    {
+      "name": "Laundry Additives",
+      "url": "https://blinkit.com/cn/laundry-additives/cid/18/985"
+    },
+    {
+      "name": "Toilet Cleaners & More",
+      "url": "https://blinkit.com/cn/toilet-cleaners-more/cid/18/987"
+    },
+    {
+      "name": "Liquid Detergents",
+      "url": "https://blinkit.com/cn/liquid-detergents/cid/18/1077"
+    },
+    {
+      "name": "Cleaning Tools",
+      "url": "https://blinkit.com/cn/cleaning-tools/cid/18/1082"
+    },
+    {
+      "name": "Disinfectant & More",
+      "url": "https://blinkit.com/cn/disinfectant-more/cid/18/1784"
+    },
+    {
+      "name": "Garbage Bags",
+      "url": "https://blinkit.com/cn/garbage-bags/cid/18/1833"
+    },
+    {
+      "name": "Car Fresheners",
+      "url": "https://blinkit.com/cn/car-fresheners/cid/18/1089"
+    },
+    {
+      "name": "Air Fresheners",
+      "url": "https://blinkit.com/cn/air-fresheners/cid/18/982"
+    },
+    {
+      "name": "Floor Cleaners & More",
+      "url": "https://blinkit.com/cn/floor-cleaners-more/cid/18/51"
+    },
+    {
+      "name": "Multi-Purpose Disinfectants",
+      "url": "https://blinkit.com/cn/multi-purpose-disinfectants/cid/18/1983"
+    },
+    {
+      "name": "Dishwashing Gels & Powders",
+      "url": "https://blinkit.com/cn/dishwashing-gels-powders/cid/18/1078"
+    },
+    {
+      "name": "Dishwashing Bars",
+      "url": "https://blinkit.com/cn/dishwashing-bars/cid/18/988"
+    },
+    {
+      "name": "Scrubbers & Cleaning Aids",
+      "url": "https://blinkit.com/cn/scrubbers-cleaning-aids/cid/18/1079"
+    },
+    {
+      "name": "Dishwashing Accessories",
+      "url": "https://blinkit.com/cn/dishwashing-accessories/cid/18/986"
+    },
+    {
+      "name": "Detergent Bars",
+      "url": "https://blinkit.com/cn/detergent-bars/cid/18/984"
+    },
+    {
+      "name": "Detergent Powder & Bars",
+      "url": "https://blinkit.com/cn/detergent-powder-bars/cid/18/54"
+    },
+    {
+      "name": "Brooms & Mops",
+      "url": "https://blinkit.com/cn/brooms-mops/cid/18/1280"
+    },
+    {
+      "name": "Wipers",
+      "url": "https://blinkit.com/cn/wipers/cid/18/1271"
+    }
+  ],
+  "Digital Goods": [
+    {
+      "name": "Antivirus",
+      "url": "https://blinkit.com/cn/antivirus/cid/416/58"
+    },
+    {
+      "name": "System Utilities",
+      "url": "https://blinkit.com/cn/system-utilities/cid/416/60"
+    }
+  ],
+  "Personal Care": [
+    {
+      "name": "Shampoo & Conditioner",
+      "url": "https://blinkit.com/cn/shampoo-conditioner/cid/163/166"
+    },
+    {
+      "name": "Body Moisturizers & More",
+      "url": "https://blinkit.com/cn/body-moisturizers-more/cid/163/690"
+    },
+    {
+      "name": "Hair Colour & More",
+      "url": "https://blinkit.com/cn/hair-colour-more/cid/163/691"
+    },
+    {
+      "name": "Men's Grooming",
+      "url": "https://blinkit.com/cn/mens-grooming/cid/163/692"
+    },
+    {
+      "name": "Cosmetics",
+      "url": "https://blinkit.com/cn/cosmetics/cid/163/693"
+    },
+    {
+      "name": "Soaps",
+      "url": "https://blinkit.com/cn/soaps/cid/163/696"
+    },
+    {
+      "name": "Hand & Foot Care",
+      "url": "https://blinkit.com/cn/hand-foot-care/cid/163/698"
+    },
+    {
+      "name": "Handwash",
+      "url": "https://blinkit.com/cn/handwash/cid/163/699"
+    },
+    {
+      "name": "Hair Oil & Serum",
+      "url": "https://blinkit.com/cn/hair-oil-serum/cid/163/702"
+    },
+    {
+      "name": "Bath & Body Kits",
+      "url": "https://blinkit.com/cn/bath-body-kits/cid/163/710"
+    },
+    {
+      "name": "Oral Care",
+      "url": "https://blinkit.com/cn/oral-care/cid/163/722"
+    },
+    {
+      "name": "Feminine Care",
+      "url": "https://blinkit.com/cn/feminine-care/cid/163/723"
+    },
+    {
+      "name": "Shower Gels & Scrubs",
+      "url": "https://blinkit.com/cn/shower-gels-scrubs/cid/163/981"
+    },
+    {
+      "name": "Deodorants & Powders",
+      "url": "https://blinkit.com/cn/deodorants-powders/cid/163/1115"
+    },
+    {
+      "name": "Facial Care",
+      "url": "https://blinkit.com/cn/facial-care/cid/163/1117"
+    },
+    {
+      "name": "Women's Grooming",
+      "url": "https://blinkit.com/cn/womens-grooming/cid/163/1893"
+    },
+    {
+      "name": "Jewellery",
+      "url": "https://blinkit.com/cn/jewellery/cid/163/1920"
+    }
+  ],
+  "Organic & Gourmet": [
+    {
+      "name": "Baby Food",
+      "url": "https://blinkit.com/cn/baby-food/cid/175/47"
+    },
+    {
+      "name": "Snacks & Munchies",
+      "url": "https://blinkit.com/cn/snacks-munchies/cid/175/82"
+    },
+    {
+      "name": "Breakfast & More",
+      "url": "https://blinkit.com/cn/breakfast-more/cid/175/96"
+    },
+    {
+      "name": "Healthy Proteins",
+      "url": "https://blinkit.com/cn/healthy-proteins/cid/175/97"
+    },
+    {
+      "name": "Beverages",
+      "url": "https://blinkit.com/cn/beverages/cid/175/655"
+    },
+    {
+      "name": "Oil & Ghee",
+      "url": "https://blinkit.com/cn/oil-ghee/cid/175/799"
+    },
+    {
+      "name": "Pulses & Millets",
+      "url": "https://blinkit.com/cn/pulses-millets/cid/175/800"
+    },
+    {
+      "name": "Flour",
+      "url": "https://blinkit.com/cn/flour/cid/175/801"
+    },
+    {
+      "name": "Spices & Vinegar",
+      "url": "https://blinkit.com/cn/spices-vinegar/cid/175/803"
+    },
+    {
+      "name": "Dairy Products",
+      "url": "https://blinkit.com/cn/dairy-products/cid/175/882"
+    },
+    {
+      "name": "Veggies and Fruits",
+      "url": "https://blinkit.com/cn/veggies-and-fruits/cid/175/919"
+    },
+    {
+      "name": "Cookies & Wafers",
+      "url": "https://blinkit.com/cn/cookies-wafers/cid/175/939"
+    },
+    {
+      "name": "Cooking Essentials",
+      "url": "https://blinkit.com/cn/cooking-essentials/cid/175/946"
+    },
+    {
+      "name": "Chocolates & Candies",
+      "url": "https://blinkit.com/cn/chocolates-candies/cid/175/1044"
+    },
+    {
+      "name": "Sauces & Spreads",
+      "url": "https://blinkit.com/cn/sauces-spreads/cid/175/1128"
+    },
+    {
+      "name": "Noodles & Pasta",
+      "url": "https://blinkit.com/cn/noodles-pasta/cid/175/1313"
+    },
+    {
+      "name": "Tea & Coffee",
+      "url": "https://blinkit.com/cn/tea-coffee/cid/175/1563"
+    },
+    {
+      "name": "Rice & Rice Products",
+      "url": "https://blinkit.com/cn/rice-rice-products/cid/175/1935"
+    },
+    {
+      "name": "Organic Salt",
+      "url": "https://blinkit.com/cn/organic-salt/cid/175/1936"
+    },
+    {
+      "name": "Dry Fruits, Nuts & Seeds",
+      "url": "https://blinkit.com/cn/dry-fruits-nuts-seeds/cid/175/1937"
+    }
+  ],
+  "Pharma & Wellness": [
+    {
+      "name": "Healthcare Devices",
+      "url": "https://blinkit.com/cn/healthcare-devices/cid/287/62"
+    },
+    {
+      "name": "Cough & Cold",
+      "url": "https://blinkit.com/cn/cough-cold/cid/287/75"
+    },
+    {
+      "name": "Adult Nutritional Drinks",
+      "url": "https://blinkit.com/cn/adult-nutritional-drinks/cid/287/2186"
+    },
+    {
+      "name": "Personal Body Massagers",
+      "url": "https://blinkit.com/cn/personal-body-massagers/cid/287/1350"
+    },
+    {
+      "name": "Lubricants and Enhancers",
+      "url": "https://blinkit.com/cn/lubricants-and-enhancers/cid/287/756"
+    },
+    {
+      "name": "Wound Care And Pain Relief",
+      "url": "https://blinkit.com/cn/wound-care-and-pain-relief/cid/287/155"
+    },
+    {
+      "name": "Everyday Medicines",
+      "url": "https://blinkit.com/cn/everyday-medicines/cid/287/289"
+    },
+    {
+      "name": "Skin Treatment",
+      "url": "https://blinkit.com/cn/skin-treatment/cid/287/199"
+    },
+    {
+      "name": "Vitamins & Daily Nutrition",
+      "url": "https://blinkit.com/cn/vitamins-daily-nutrition/cid/287/293"
+    },
+    {
+      "name": "Smoking Cessation",
+      "url": "https://blinkit.com/cn/smoking-cessation/cid/287/290"
+    },
+    {
+      "name": "Digestive Care",
+      "url": "https://blinkit.com/cn/digestive-care/cid/287/298"
+    },
+    {
+      "name": "Supplements",
+      "url": "https://blinkit.com/cn/supplements/cid/287/308"
+    },
+    {
+      "name": "Adult Diapers",
+      "url": "https://blinkit.com/cn/adult-diapers/cid/287/629"
+    },
+    {
+      "name": "Condoms",
+      "url": "https://blinkit.com/cn/condoms/cid/287/707"
+    },
+    {
+      "name": "Other Pharma",
+      "url": "https://blinkit.com/cn/other-pharma/cid/287/1120"
+    },
+    {
+      "name": "Beauty Supplements",
+      "url": "https://blinkit.com/cn/beauty-supplements/cid/287/295"
+    },
+    {
+      "name": "Antiseptic Liquid",
+      "url": "https://blinkit.com/cn/antiseptic-liquid/cid/287/1121"
+    },
+    {
+      "name": "Masks & Sanitizers",
+      "url": "https://blinkit.com/cn/masks-sanitizers/cid/287/1826"
+    },
+    {
+      "name": "Pre & Post Workout",
+      "url": "https://blinkit.com/cn/pre-post-workout/cid/287/306"
+    },
+    {
+      "name": "Sexual Wellness",
+      "url": "https://blinkit.com/cn/sexual-wellness/cid/287/741"
+    }
+  ],
+  "Cold Drinks & Juices": [
+    {
+      "name": "Energy Drinks",
+      "url": "https://blinkit.com/cn/energy-drinks/cid/332/19"
+    },
+    {
+      "name": "Coldpress",
+      "url": "https://blinkit.com/cn/coldpress/cid/332/91"
+    },
+    {
+      "name": "Coconut Water",
+      "url": "https://blinkit.com/cn/coconut-water/cid/332/1594"
+    },
+    {
+      "name": "Concentrates & Syrups",
+      "url": "https://blinkit.com/cn/concentrates-syrups/cid/332/109"
+    },
+    {
+      "name": "Sharbat",
+      "url": "https://blinkit.com/cn/sharbat/cid/332/24"
+    },
+    {
+      "name": "Mango Drink",
+      "url": "https://blinkit.com/cn/mango-drink/cid/332/1108"
+    },
+    {
+      "name": "Flavored Milk",
+      "url": "https://blinkit.com/cn/flavored-milk/cid/332/36"
+    },
+    {
+      "name": "Lassi",
+      "url": "https://blinkit.com/cn/lassi/cid/332/1093"
+    },
+    {
+      "name": "Specialty Milk",
+      "url": "https://blinkit.com/cn/specialty-milk/cid/332/1091"
+    },
+    {
+      "name": "Soda",
+      "url": "https://blinkit.com/cn/soda/cid/332/1600"
+    },
+    {
+      "name": "Cold Drink in Bottles",
+      "url": "https://blinkit.com/cn/cold-drink-in-bottles/cid/332/23"
+    },
+    {
+      "name": "Cocktail Mixers/Tonic Waters",
+      "url": "https://blinkit.com/cn/cocktail-mixerstonic-waters/cid/332/1103"
+    },
+    {
+      "name": "Cold Drink in a Can",
+      "url": "https://blinkit.com/cn/cold-drink-in-a-can/cid/332/1107"
+    },
+    {
+      "name": "Ice Cubes",
+      "url": "https://blinkit.com/cn/ice-cubes/cid/332/219"
+    },
+    {
+      "name": "Mineral Water",
+      "url": "https://blinkit.com/cn/mineral-water/cid/332/22"
+    },
+    {
+      "name": "Non-Alcoholic Drinks",
+      "url": "https://blinkit.com/cn/non-alcoholic-drinks/cid/332/1486"
+    },
+    {
+      "name": "Glucose Energy Drink",
+      "url": "https://blinkit.com/cn/glucose-energy-drink/cid/332/640"
+    },
+    {
+      "name": "Water & Ice Cubes",
+      "url": "https://blinkit.com/cn/water-ice-cubes/cid/332/270"
+    },
+    {
+      "name": "Fruit Juices",
+      "url": "https://blinkit.com/cn/fruit-juices/cid/332/955"
+    },
+    {
+      "name": "Cold Coffee",
+      "url": "https://blinkit.com/cn/cold-coffee/cid/332/412"
+    },
+    {
+      "name": "Iced Tea",
+      "url": "https://blinkit.com/cn/iced-tea/cid/332/93"
+    },
+    {
+      "name": "100% Juice",
+      "url": "https://blinkit.com/cn/100-juice/cid/332/1318"
+    },
+    {
+      "name": "Soft Drinks",
+      "url": "https://blinkit.com/cn/soft-drinks/cid/332/1102"
+    },
+    {
+      "name": "Soda & Mixers",
+      "url": "https://blinkit.com/cn/soda-mixers/cid/332/1599"
+    }
+  ],
   "Ice Cream & Frozen Desserts": [
     {
       "name": "Tubs",
@@ -413,6 +1243,136 @@
     {
       "name": "Bhujia & Mixtures",
       "url": "https://blinkit.com/cn/bhujia-mixtures/cid/1237/1178"
+    }
+  ],
+  "Home & Office": [
+    {
+      "name": "Soft Toys & Greeting Cards",
+      "url": "https://blinkit.com/cn/soft-toys-greeting-cards/cid/1379/394"
+    },
+    {
+      "name": "Games",
+      "url": "https://blinkit.com/cn/games/cid/1379/1868"
+    },
+    {
+      "name": "Collectible Toy Guns & Accessories",
+      "url": "https://blinkit.com/cn/collectible-toy-guns-accessories/cid/1379/596"
+    },
+    {
+      "name": "DIY and Learning",
+      "url": "https://blinkit.com/cn/diy-and-learning/cid/1379/591"
+    },
+    {
+      "name": "Bags",
+      "url": "https://blinkit.com/cn/bags/cid/1379/120"
+    },
+    {
+      "name": "Party Essentials",
+      "url": "https://blinkit.com/cn/party-essentials/cid/1379/126"
+    },
+    {
+      "name": "Kids Toys & More",
+      "url": "https://blinkit.com/cn/kids-toys-more/cid/1379/305"
+    },
+    {
+      "name": "Repellents",
+      "url": "https://blinkit.com/cn/repellents/cid/1379/926"
+    },
+    {
+      "name": "Bathroom Essentials",
+      "url": "https://blinkit.com/cn/bathroom-essentials/cid/1379/1014"
+    },
+    {
+      "name": "Pooja Needs",
+      "url": "https://blinkit.com/cn/pooja-needs/cid/1379/1048"
+    },
+    {
+      "name": "Stationery Needs",
+      "url": "https://blinkit.com/cn/stationery-needs/cid/1379/1049"
+    },
+    {
+      "name": "Kitchen & Dining Needs",
+      "url": "https://blinkit.com/cn/kitchen-dining-needs/cid/1379/1052"
+    },
+    {
+      "name": "Tissues & Disposables",
+      "url": "https://blinkit.com/cn/tissues-disposables/cid/1379/1075"
+    },
+    {
+      "name": "Fresheners",
+      "url": "https://blinkit.com/cn/fresheners/cid/1379/1085"
+    },
+    {
+      "name": "Electrical Accessories",
+      "url": "https://blinkit.com/cn/electrical-accessories/cid/1379/1187"
+    },
+    {
+      "name": "Electronic Accessories",
+      "url": "https://blinkit.com/cn/electronic-accessories/cid/1379/1387"
+    },
+    {
+      "name": "Home Decor & Storage",
+      "url": "https://blinkit.com/cn/home-decor-storage/cid/1379/1433"
+    },
+    {
+      "name": "Festive & Occasion Needs",
+      "url": "https://blinkit.com/cn/festive-occasion-needs/cid/1379/1674"
+    },
+    {
+      "name": "Clothing, Footwear & Accessories",
+      "url": "https://blinkit.com/cn/clothing-footwear-accessories/cid/1379/1715"
+    },
+    {
+      "name": "Home & Kitchen Appliances",
+      "url": "https://blinkit.com/cn/home-kitchen-appliances/cid/1379/1886"
+    },
+    {
+      "name": "Books",
+      "url": "https://blinkit.com/cn/books/cid/1379/1970"
+    },
+    {
+      "name": "Sports, Fitness & Outdoors",
+      "url": "https://blinkit.com/cn/sports-fitness-outdoors/cid/1379/1992"
+    },
+    {
+      "name": "Trimmers",
+      "url": "https://blinkit.com/cn/trimmers/cid/1379/2108"
+    },
+    {
+      "name": "Hair Dryer",
+      "url": "https://blinkit.com/cn/hair-dryer/cid/1379/2109"
+    },
+    {
+      "name": "Weighing Machines & Massagers",
+      "url": "https://blinkit.com/cn/weighing-machines-massagers/cid/1379/2110"
+    },
+    {
+      "name": "Mixer Grinders",
+      "url": "https://blinkit.com/cn/mixer-grinders/cid/1379/1882"
+    },
+    {
+      "name": "Fans",
+      "url": "https://blinkit.com/cn/fans/cid/1379/2106"
+    },
+    {
+      "name": "Electric Kettles",
+      "url": "https://blinkit.com/cn/electric-kettles/cid/1379/2111"
+    },
+    {
+      "name": "Choppers",
+      "url": "https://blinkit.com/cn/choppers/cid/1379/1068"
+    },
+    {
+      "name": "Iron",
+      "url": "https://blinkit.com/cn/iron/cid/1379/1890"
+    },
+    {
+      "name": "Toasters",
+      "url": "https://blinkit.com/cn/toasters/cid/1379/1883"
+    },
+    {
+      "name": "Clocks & Calculators",
+      "url": "https://blinkit.com/cn/clocks-calculators/cid/1379/2107"
     }
   ],
   "Vegetables & Fruits": [

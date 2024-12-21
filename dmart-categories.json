@@ -29,6 +29,104 @@
       "uniqueId": "93199",
       "fullImage": "aesc-fruitsandvegetablescore",
       "thumbnail": "fruits-vegetables-131022"
+    },
+    {
+      "name": "Home & Kitchen",
+      "seoToken": "home---kitchen-aesc-homeandkitchencore",
+      "uniqueId": "93200",
+      "fullImage": "aesc-homeandkitchencore",
+      "thumbnail": "home-kitchen-131022"
+    },
+    {
+      "name": "Bed & Bath",
+      "seoToken": "bed-bath",
+      "uniqueId": "205003",
+      "fullImage": "aesc-Bed-Bath-SC2",
+      "thumbnail": "bed-bath-040724"
+    },
+    {
+      "name": "Personal Care & Beauty",
+      "seoToken": "personal-care-beauty",
+      "uniqueId": "208502",
+      "fullImage": "aesc-Personal-Care-Beauty-SC2",
+      "thumbnail": "aesc-beauty-grooming-281124"
+    },
+    {
+      "name": "Sports & Fitness",
+      "seoToken": "sports-fitness-207525--1",
+      "uniqueId": "207525",
+      "fullImage": "aesc-sports-fitnessSC2",
+      "thumbnail": "aesc-sports-fitnessSC2"
+    },
+    {
+      "name": "Baby & Kids",
+      "seoToken": "baby---kids-aesc-babyandkidscore",
+      "uniqueId": "93197",
+      "fullImage": "aesc-babyandkidscore",
+      "thumbnail": "baby-kids-131022"
+    },
+    {
+      "name": "Books & Stationery",
+      "seoToken": "books-204003--1",
+      "uniqueId": "204003",
+      "fullImage": "aesc-books-SC2",
+      "thumbnail": "aesc-books-240624"
+    },
+    {
+      "name": "Home Utility & Organisers",
+      "seoToken": "home-utility-organisers",
+      "uniqueId": "141503",
+      "fullImage": "aesc-homeutilityandorganiserSC2",
+      "thumbnail": "aesc-homeutilityandorganiser-081223"
+    },
+    {
+      "name": "Electronics & Appliances",
+      "seoToken": "appliances-aesc-appliancescore",
+      "uniqueId": "93201",
+      "fullImage": "aesc-appliancescore",
+      "thumbnail": "appliancescore-131022"
+    },
+    {
+      "name": "Footwear",
+      "seoToken": "aesc--footwear",
+      "uniqueId": "93203",
+      "fullImage": "aesc-footwearcore",
+      "thumbnail": "footwearcore-131022"
+    },
+    {
+      "name": "Clothing & Accessories",
+      "seoToken": "clothing-accessories-aesc-clothingaccessories",
+      "uniqueId": "93520",
+      "fullImage": "aesc-clothing&accessories",
+      "thumbnail": "clothing-accessories-131022"
+    },
+    {
+      "name": "Bags & More",
+      "seoToken": "trolley-bags-handbags-more",
+      "uniqueId": "201502",
+      "fullImage": "aesc-trolley-bags-handbags-more",
+      "thumbnail": "aesc-trolley-bags-handbags-more-140524"
+    },
+    {
+      "name": "School Supplies",
+      "seoToken": "school-supplies",
+      "uniqueId": "93204",
+      "fullImage": "aesc-schoolsuppliescore",
+      "thumbnail": "stationary-131022"
+    },
+    {
+      "name": "Shop By Room",
+      "seoToken": "shop-by-room",
+      "uniqueId": "205502",
+      "fullImage": "aesc-shop-by-roomSC2",
+      "thumbnail": "aesc-shop-by-home-170724"
+    },
+    {
+      "name": "Seasonal & More",
+      "seoToken": "specials-aesc-specialscore",
+      "uniqueId": "93198",
+      "fullImage": "aesc-specialscore",
+      "thumbnail": "specialscore-131022"
     }
   ]
 }

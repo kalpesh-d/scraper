@@ -155,10 +155,6 @@
           "name": "Canned & Dry Fish, Pickles"
         },
         {
-          "id": "a0f66fae-207e-44e8-a493-a3d14857d1e7",
-          "name": "Combos"
-        },
-        {
           "id": "b9cd2709-1fbd-4f0d-91b1-71fecc094b60",
           "name": "Egg"
         }
@@ -269,6 +265,11 @@
           "name": "Dessert Mixes"
         }
       ]
+    },
+    {
+      "name": "Zepto Cafe",
+      "url": "https://www.zeptonow.com/pip/Zepto%20Cafe/12830",
+      "subcategories": []
     },
     {
       "name": "Tea, Coffee & More",
@@ -517,6 +518,526 @@
         {
           "id": "703faebd-1224-4913-8c32-bb862d1fda62",
           "name": "Rusk & Khari"
+        }
+      ]
+    },
+    {
+      "name": "Makeup & Beauty",
+      "url": "https://www.zeptonow.com/pip/Makeup%20&%20Beauty/17771",
+      "subcategories": []
+    },
+    {
+      "name": "Skincare",
+      "url": "https://www.zeptonow.com/cn/skincare/skincare/cid/d6c455aa-496b-4599-8f7d-81ecee8cf5a3/scid/ee083c90-18ee-48ab-a121-036c57d7dddc",
+      "subcategories": [
+        {
+          "id": "ee083c90-18ee-48ab-a121-036c57d7dddc",
+          "name": "Body Lotion & Moisturizer"
+        },
+        {
+          "id": "ac7f892d-2f77-4d4a-88b3-608d58245a72",
+          "name": "Face Care"
+        },
+        {
+          "id": "771c80e8-728f-4414-89e8-1061e1e4d893",
+          "name": "Face Creams & Gels"
+        },
+        {
+          "id": "05fc8bd5-5aa4-4308-99b6-f5ea1818ff59",
+          "name": "Serums & Essence"
+        },
+        {
+          "id": "3daca7a0-c1d8-494f-bbfb-ab7884e31351",
+          "name": "Eye & Lip Care"
+        },
+        {
+          "id": "341253f0-de88-42a5-b50e-de320c1453b2",
+          "name": "Baby Skin & Hair Care"
+        },
+        {
+          "id": "9e89c253-515a-49f6-b80b-6eac6e3a5e52",
+          "name": "Face Wash & Scrubs"
+        },
+        {
+          "id": "5974c50c-882f-423b-87c7-c1dd3eed36fa",
+          "name": "Sun Care"
+        },
+        {
+          "id": "6ec089e8-3223-4f23-a8ea-7a6aec643e1e",
+          "name": "Body Care"
+        },
+        {
+          "id": "c8aeaeb0-66e7-4717-8430-456c8277bfb8",
+          "name": "Toners & Mists"
+        },
+        {
+          "id": "350d4c7e-de37-436f-83ee-be065bac1115",
+          "name": "Hand & Feet Care"
+        }
+      ]
+    },
+    {
+      "name": "Baby Care",
+      "url": "https://www.zeptonow.com/cn/baby-care/baby-care/cid/0118c4f5-750c-4929-a734-b4ef454e265b/scid/67e4dc8d-b2dc-4ae3-bf90-ff00ea1d5149",
+      "subcategories": [
+        {
+          "id": "67e4dc8d-b2dc-4ae3-bf90-ff00ea1d5149",
+          "name": "Baby & Mom Gifting"
+        },
+        {
+          "id": "3b386054-f215-4dfb-97f1-ac2a4c1d369e",
+          "name": "Baby Skin & Hair Care"
+        },
+        {
+          "id": "656132b1-c0cd-44ae-afb2-62d3fe3d70fd",
+          "name": "Baby Bath"
+        },
+        {
+          "id": "2b24bfa9-6ef9-41a4-8bf9-694ef4d01a44",
+          "name": "Baby Wipes"
+        },
+        {
+          "id": "b998e39c-6948-42f2-84bb-947f07f2ceca",
+          "name": "Baby Diapering"
+        },
+        {
+          "id": "60dbf0e6-6a76-4aa6-ab0c-7d1cce7165b9",
+          "name": "Baby Feeding"
+        },
+        {
+          "id": "f1af24d2-e5ea-4de5-a577-bfb332dda2ea",
+          "name": "Baby Gear"
+        },
+        {
+          "id": "88c0c306-f192-4387-bfb1-3e7c810a7af0",
+          "name": "Baby Hygiene"
+        },
+        {
+          "id": "8ec78ab7-9493-4bf8-aca8-fc4ee691acff",
+          "name": "Baby Health"
+        },
+        {
+          "id": "06bd4eb6-05cb-4937-9334-11317471f881",
+          "name": "Baby Nursery"
+        },
+        {
+          "id": "26f826a6-a1a3-4b87-b33f-4f80781077fc",
+          "name": "Mom Care"
+        },
+        {
+          "id": "9a5aa128-beb4-4af6-92af-eea149911420",
+          "name": "Baby Oral Care"
+        },
+        {
+          "id": "98759147-826f-4831-9880-8e2c717ed312",
+          "name": "Baby Safety"
+        },
+        {
+          "id": "b0941916-af2f-4ee7-b94b-261c28f3dc56",
+          "name": "Infant Clothing"
+        }
+      ]
+    },
+    {
+      "name": "Bath & Body",
+      "url": "https://www.zeptonow.com/cn/bath-body/bath-body/cid/26e64367-19ad-4f80-a763-42599d4215ee/scid/e8801cfd-49d0-4388-bc29-f83258204d39",
+      "subcategories": [
+        {
+          "id": "e8801cfd-49d0-4388-bc29-f83258204d39",
+          "name": "Shower Gels"
+        },
+        {
+          "id": "98e244c8-e4ef-4460-ade3-91957fc1e326",
+          "name": "Soaps"
+        },
+        {
+          "id": "08fa530f-c532-4027-b0d2-b128cd6b61d9",
+          "name": "Toothpaste & Mouthwash"
+        },
+        {
+          "id": "29c3e7d4-a68b-4051-86f6-0e57fd45bd62",
+          "name": "Toothbrush & More"
+        },
+        {
+          "id": "8b8159cb-2033-4282-9402-3430a1415a7c",
+          "name": "Baby Bath"
+        },
+        {
+          "id": "201f0076-e25c-412d-a9df-8cb8a07af57e",
+          "name": "Bath Accessories"
+        },
+        {
+          "id": "5f79333b-5629-4cdf-9425-c7525f5f7c87",
+          "name": "Handwash & Sanitizers"
+        },
+        {
+          "id": "c95e9e86-e3c1-4806-be5b-ab323bf86c6b",
+          "name": "Talcum Powder"
+        },
+        {
+          "id": "b04152b0-3d75-4cc6-91e0-8b158f08a978",
+          "name": "Body Creams"
+        }
+      ]
+    },
+    {
+      "name": "Hair Care",
+      "url": "https://www.zeptonow.com/cn/hair-care/hair-care/cid/513e1b9e-7f62-4063-bf57-4335521dc5de/scid/cbc00f48-d856-4900-ad3e-859f332f199b",
+      "subcategories": [
+        {
+          "id": "cbc00f48-d856-4900-ad3e-859f332f199b",
+          "name": "Shampoo"
+        },
+        {
+          "id": "00be6703-c23c-4bfa-b25b-dbb5c9502a39",
+          "name": "Hair Serum & Polish"
+        },
+        {
+          "id": "712ad8fc-fc69-47f0-a8c5-a5d9525123ed",
+          "name": "Hair Styling"
+        },
+        {
+          "id": "87cfbc30-2aee-4bd7-ab10-920d61070201",
+          "name": "Hair Color"
+        },
+        {
+          "id": "df093b75-6746-46b4-8098-c98af571d274",
+          "name": "Conditioner & Masks"
+        },
+        {
+          "id": "59ae203f-71ad-4dc9-aaad-68158cc72f74",
+          "name": "Hair Tools & Accessories"
+        },
+        {
+          "id": "e2539dfe-b16a-4c9a-942a-2c1ffc26414c",
+          "name": "Hair Oil"
+        }
+      ]
+    },
+    {
+      "name": "Jewellery",
+      "url": "https://www.zeptonow.com/cn/jewellery/jewellery/cid/27b4b613-108e-4c77-91e6-b839d542385b/scid/0",
+      "subcategories": [
+        {
+          "id": "1f7deba0-09ea-4081-aaa4-e20f10c693e1",
+          "name": "Necklace & Pendants"
+        },
+        {
+          "id": "a868cdfb-d4cb-4b47-a8b7-dc765799adb4",
+          "name": "Rings"
+        },
+        {
+          "id": "02413d26-639d-4488-b6ad-f285b0fe3ab6",
+          "name": "Earrings"
+        },
+        {
+          "id": "a0d59f8c-fe33-4fd4-ab45-5b3eddc3f815",
+          "name": "Other Accessories"
+        },
+        {
+          "id": "0f669245-781c-48fa-8eae-49d855395204",
+          "name": "Bracelets & Bangles"
+        },
+        {
+          "id": "6ac936c1-c165-4293-9748-da79c6255d25",
+          "name": "Anklets & Armlets"
+        },
+        {
+          "id": "2b35395a-eea3-4b70-a33f-86148faa5059",
+          "name": "Sets"
+        },
+        {
+          "id": "7931758e-5340-47d8-b2bf-c6706a276414",
+          "name": "Forehead Ornaments"
+        },
+        {
+          "id": "198a35d6-1f06-4aa0-bab0-cca8d21059fa",
+          "name": "Men's Jewellery"
+        }
+      ]
+    },
+    {
+      "name": "Apparel & Lifestyle",
+      "url": "https://www.zeptonow.com/pip/Apparel%20&%20Lifestyle/18194",
+      "subcategories": []
+    },
+    {
+      "name": "Fragrances & Grooming",
+      "url": "https://www.zeptonow.com/cn/fragrances-grooming/fragrances-grooming/cid/875671b0-ec18-42c7-9749-c2cf165509fa/scid/a7129b9a-4466-4935-957f-f91eff2130b7",
+      "subcategories": [
+        {
+          "id": "1edd780e-d291-4846-98d4-3193d769caaa",
+          "name": "Luxury Fragrances"
+        },
+        {
+          "id": "a7129b9a-4466-4935-957f-f91eff2130b7",
+          "name": "Perfumes"
+        },
+        {
+          "id": "7a424911-0459-44d5-a7bb-6ff7a8542579",
+          "name": "Deos & Roll Ons"
+        },
+        {
+          "id": "5e106a20-23e1-443a-ae1e-6aed199581a6",
+          "name": "Shaving Needs"
+        },
+        {
+          "id": "0d277dd3-84d4-4ff2-9b21-fa47902a13db",
+          "name": "Hair Removal"
+        },
+        {
+          "id": "2e690ea0-ed16-404c-9a51-ae8cdc9eb93d",
+          "name": "Men's Grooming"
+        },
+        {
+          "id": "93a9a3cf-d1e0-449a-87f7-3c503393aff6",
+          "name": "Hygiene Essentials"
+        },
+        {
+          "id": "ebebc777-4d7a-4a49-bd18-6e7b0cfb40f7",
+          "name": "Personal Grooming"
+        }
+      ]
+    },
+    {
+      "name": "Pharma & Wellness",
+      "url": "https://www.zeptonow.com/cn/pharma-wellness/pharma-wellness/cid/46853481-25d4-4126-947b-c6d96f0669f6/scid/2cda7a85-545a-4dfd-856b-ec234017ab9e",
+      "subcategories": [
+        {
+          "id": "2cda7a85-545a-4dfd-856b-ec234017ab9e",
+          "name": "Handwash & Sanitizers"
+        },
+        {
+          "id": "2a301959-49fe-4c22-a3ca-82a96dc1cfc9",
+          "name": "Vitamin Supplements"
+        },
+        {
+          "id": "a6dd3dc8-fc04-464e-82cb-62c5432b9149",
+          "name": "Stomach Care"
+        },
+        {
+          "id": "49f6f8ea-1cd9-4808-8f64-cf5c0ab62bb6",
+          "name": "First-Aid"
+        },
+        {
+          "id": "05eeda57-14cb-44d4-8877-6a0b37a02958",
+          "name": "Fitness"
+        },
+        {
+          "id": "53a30e11-76c0-468e-814c-f7e3ac6cc372",
+          "name": "Fever, Cold & Cough"
+        },
+        {
+          "id": "186d5b1c-8714-4e83-8cc9-1c13e3c632dd",
+          "name": "Ayurveda"
+        },
+        {
+          "id": "74ed2640-6b7a-42fb-adc3-c0c3f1dfa439",
+          "name": "Pain Relief"
+        },
+        {
+          "id": "eaf2c09f-58a2-4391-8025-f10999feab56",
+          "name": "Medical Devices"
+        },
+        {
+          "id": "f11e6ee4-03ae-406b-b6a0-d886c514ae9a",
+          "name": "Women Care"
+        },
+        {
+          "id": "871f92dd-41fc-42b6-b016-40a1079650ab",
+          "name": "Elderly Care"
+        },
+        {
+          "id": "b9c11c14-614a-4e64-a93a-4634b333297b",
+          "name": "Wipes, Masks & More"
+        },
+        {
+          "id": "1da9416f-8b99-40a4-886b-fef1a7751f04",
+          "name": "Derma Care"
+        },
+        {
+          "id": "580c92f9-5367-4f02-aea1-5db31140d536",
+          "name": "Eye & Ear Care"
+        },
+        {
+          "id": "a833c701-9e3d-419d-ba7c-1d405c7e020e",
+          "name": "Other Pharma Items"
+        }
+      ]
+    },
+    {
+      "name": "Kitchen & Dining",
+      "url": "https://www.zeptonow.com/cn/kitchen-dining/kitchen-dining/cid/2423aa03-4219-4cab-a84d-92019f967003/scid/1a297ee1-4f6b-4278-950f-4d4f328e755b",
+      "subcategories": [
+        {
+          "id": "1a297ee1-4f6b-4278-950f-4d4f328e755b",
+          "name": "Kitchen Accessories"
+        },
+        {
+          "id": "b73da792-6722-431e-a60b-c06ac1e53c0d",
+          "name": "Kitchen Tools"
+        },
+        {
+          "id": "de700009-073d-4d6c-a675-5af7185c3206",
+          "name": "Kitchen Storage"
+        },
+        {
+          "id": "ba32cc8a-b260-4d7c-a891-ad9670cb3266",
+          "name": "Bottles & Flasks"
+        },
+        {
+          "id": "76f5272b-90ad-41e0-b2c1-0ec8f5ffdcf3",
+          "name": "Gas Stove & Accessories"
+        },
+        {
+          "id": "1d50b537-f037-4cc7-b33a-56d2116ba75d",
+          "name": "Cookware"
+        },
+        {
+          "id": "355603ca-f2d4-439b-b350-c3b6f32d39f2",
+          "name": "Tableware"
+        },
+        {
+          "id": "3e790270-8a2f-4e2d-859d-4cc201b5a053",
+          "name": "Steel Utensils"
+        },
+        {
+          "id": "7c9ee826-150f-4ca3-be34-c6a66e285456",
+          "name": "Drinkware & Bar"
+        },
+        {
+          "id": "73932e88-ac49-424e-b260-d3d100f0fdf2",
+          "name": "Pressure Cooker"
+        },
+        {
+          "id": "39d4c6fc-d873-4c03-bc35-2ea806d1d941",
+          "name": "Lunch Boxes"
+        },
+        {
+          "id": "70849a07-11b0-4160-9715-c0047fdcc437",
+          "name": "Kitchen Aids"
+        }
+      ]
+    },
+    {
+      "name": "Cleaning Essentials",
+      "url": "https://www.zeptonow.com/cn/cleaning-essentials/cleaning-essentials/cid/1a7e46a8-e627-450f-8960-490b550eeee6/scid/6d8da507-b86b-48b8-ad99-9e5a5c61a48f",
+      "subcategories": [
+        {
+          "id": "6d8da507-b86b-48b8-ad99-9e5a5c61a48f",
+          "name": "Detergent Powder & Bars"
+        },
+        {
+          "id": "dfb37880-b40f-4783-9502-a56e12edbabc",
+          "name": "Liquid Detergents & Additives"
+        },
+        {
+          "id": "f370ad06-83f2-4831-95dd-644c675e068f",
+          "name": "Dishwash Gels & Bars"
+        },
+        {
+          "id": "2b94ac09-f492-4f0e-9ed5-767f18955a86",
+          "name": "Kitchen Cleaning"
+        },
+        {
+          "id": "d22a9423-0063-4102-9f09-57e79ff030e3",
+          "name": "Floor & Surface Cleaners"
+        },
+        {
+          "id": "e0620547-3879-443c-b936-4890f7ac557b",
+          "name": "Toilet & Bathroom Cleaners"
+        },
+        {
+          "id": "65ad72aa-458c-487f-a0e9-bdd43a13b974",
+          "name": "Baby Hygiene"
+        },
+        {
+          "id": "81839fb1-a09d-46e8-a58d-367b26df0de4",
+          "name": "Fresheners"
+        },
+        {
+          "id": "a625cca0-c8fe-495b-b4d7-c2c802d6d05e",
+          "name": "Laundry Additives"
+        },
+        {
+          "id": "3b8d9db5-1953-4593-b4ce-8593f6fbd67a",
+          "name": "Repellents"
+        },
+        {
+          "id": "98f11962-f2cc-4148-8fdf-03f3df7895ee",
+          "name": "Shoe Care"
+        }
+      ]
+    },
+    {
+      "name": "Pet Care",
+      "url": "https://www.zeptonow.com/cn/pet-care/pet-care/cid/13831a81-e0d5-4939-9650-df2413e7aead/scid/8f39b80f-2682-4038-befa-c0001465647d",
+      "subcategories": [
+        {
+          "id": "8f39b80f-2682-4038-befa-c0001465647d",
+          "name": "Cat Food"
+        },
+        {
+          "id": "84d3f3f0-8f4c-407a-b150-16b33661102f",
+          "name": "Pet Treats & Toys"
+        },
+        {
+          "id": "b9a580ee-15b6-43a0-be46-56fb0313d72f",
+          "name": "Dog Food"
+        },
+        {
+          "id": "307891fb-e78a-4ec4-9036-101e2526e219",
+          "name": "Pet Grooming & Hygiene"
+        },
+        {
+          "id": "e5e02476-3270-4dea-9b65-20a1c213c996",
+          "name": "Pet Accessories"
+        },
+        {
+          "id": "ab366da7-05be-4563-abb8-a37fc0a5cfff",
+          "name": "Pet Health Supplements"
+        },
+        {
+          "id": "1e3e34ac-a167-4e8b-97a7-0fc1b5f32590",
+          "name": "Small Pet Food"
+        }
+      ]
+    },
+    {
+      "name": "Stationery & Books",
+      "url": "https://www.zeptonow.com/cn/stationery-books/stationery-books/cid/0d74209d-c2e4-431b-98e0-c00a92766773/scid/68aecbfb-46ba-43ae-bfe5-97127b4e8117",
+      "subcategories": [
+        {
+          "id": "68aecbfb-46ba-43ae-bfe5-97127b4e8117",
+          "name": "Writing Essentials"
+        },
+        {
+          "id": "837ca8d3-58d5-40ae-a293-c31a64296522",
+          "name": "Books & Magazines"
+        },
+        {
+          "id": "74073fb8-6294-4830-ae40-c6dffd42e474",
+          "name": "School Supplies"
+        },
+        {
+          "id": "48df4626-0d5a-44e0-8c3a-f8be7bcd1d39",
+          "name": "Crafts & Hobby"
+        },
+        {
+          "id": "84f7cd06-0f04-4a24-94df-d668f4bfe8b0",
+          "name": "Notebooks & Diaries"
+        },
+        {
+          "id": "67b9d989-cea7-47db-be1a-a9123622aefb",
+          "name": "Office Supply"
+        },
+        {
+          "id": "16ed56f4-4419-47ae-97b8-51170d4e6e80",
+          "name": "Bottles & Lunch Box"
+        },
+        {
+          "id": "f0a63987-f040-4b50-a342-1cda2e9d5804",
+          "name": "Glue & Tape"
         }
       ]
     }
