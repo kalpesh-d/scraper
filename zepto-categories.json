@@ -1,0 +1,524 @@
+{
+  "categories": [
+    {
+      "name": "Fruits & Vegetables",
+      "url": "https://www.zeptonow.com/cn/fruits-vegetables/fruits-vegetables/cid/64374cfe-d06f-4a01-898e-c07c46462c36/scid/e78a8422-5f20-4e4b-9a9f-22a0e53962e3",
+      "subcategories": [
+        {
+          "id": "b4827798-fcb6-4520-ba5b-0f2bd9bd7208",
+          "name": "Fresh Vegetables"
+        },
+        {
+          "id": "09e63c15-e5f7-4712-9ff8-513250b79942",
+          "name": "Fresh Fruits"
+        },
+        {
+          "id": "fc342528-4d25-4a6b-a28a-7c8df22fa857",
+          "name": "Seasonal Picks"
+        },
+        {
+          "id": "bc8ec1d3-95cf-4af5-aa60-43cde99798c1",
+          "name": "Leafy, Herbs & Seasonings"
+        },
+        {
+          "id": "0a065d7d-ea57-4359-9900-b03425028d47",
+          "name": "Exotics & Premium"
+        },
+        {
+          "id": "414e9381-3ba3-4632-92e0-00fc29304900",
+          "name": "Organics & Hydroponics"
+        },
+        {
+          "id": "6eb7a384-5edf-4a68-aa99-a1c2b30c2f19",
+          "name": "Cuts & Sprouts"
+        },
+        {
+          "id": "ec911f07-e53f-4086-81e7-089a789860c8",
+          "name": "Flowers & Leaves"
+        },
+        {
+          "id": "97c725c2-41b3-4d78-ba3e-75e92b3ba054",
+          "name": "Plants & Gardening"
+        },
+        {
+          "id": "ac416c10-4eee-45bb-b1ec-3a91e89c32d5",
+          "name": "Dried & Dehydrated"
+        },
+        {
+          "id": "172749fd-8c09-454a-997a-79c7cd8bc03a",
+          "name": "Fresh Juices"
+        },
+        {
+          "id": "9fe9b3f1-c6ff-463a-a8d0-ade4fcb3d1dd",
+          "name": "Fresh Salads & Juices"
+        }
+      ]
+    },
+    {
+      "name": "Dairy, Bread & Eggs",
+      "url": "https://www.zeptonow.com/cn/dairy-bread-eggs/dairy-bread-eggs/cid/4b938e02-7bde-4479-bc0a-2b54cb6bd5f5/scid/f594b28a-4775-48ac-8840-b9030229ff87",
+      "subcategories": [
+        {
+          "id": "f594b28a-4775-48ac-8840-b9030229ff87",
+          "name": "Cheese"
+        },
+        {
+          "id": "d638f064-e7f3-4161-b692-a3f472c64020",
+          "name": "Eggs"
+        },
+        {
+          "id": "1806412f-190a-46b1-be42-4237a4146eb1",
+          "name": "Paneer & Cream"
+        },
+        {
+          "id": "62b2b1eb-cd07-41b2-b567-cc878d2287fc",
+          "name": "Butter"
+        },
+        {
+          "id": "22964a2b-0439-4236-9950-0d71b532b243",
+          "name": "Milk"
+        },
+        {
+          "id": "4e975d7a-b3f9-4958-99e9-cd96cb7e7b0b",
+          "name": "Yogurts & Dahi"
+        },
+        {
+          "id": "30566884-bbd7-49fa-8c3f-43c90a571c9e",
+          "name": "Breads & Buns"
+        },
+        {
+          "id": "30fc9ec2-394f-4d84-8aca-51a8929c4870",
+          "name": "Batters & Mixes"
+        },
+        {
+          "id": "068be711-3903-479b-b96e-96bfa67df150",
+          "name": "Vegan Drinks"
+        },
+        {
+          "id": "24ed6b1e-610b-4a6a-98ee-8a327040445f",
+          "name": "Zepto Cafe"
+        }
+      ]
+    },
+    {
+      "name": "Atta, Rice, Oil & Dals",
+      "url": "https://www.zeptonow.com/cn/atta-rice-oil-dals/atta-rice-oil-dals/cid/2f7190d0-7c40-458b-b450-9a1006db3d95/scid/84f270cf-ae95-4d61-a556-b35b563fb947",
+      "subcategories": [
+        {
+          "id": "2b5e863c-9497-46ae-a7e9-85f6ef7380da",
+          "name": "Oil"
+        },
+        {
+          "id": "9a9ca257-b277-4b02-9e12-cf637565b8f1",
+          "name": "Atta & Other Flours"
+        },
+        {
+          "id": "59c951bd-4cb4-4659-9467-1e72a8f972d9",
+          "name": "Dals & Pulses"
+        },
+        {
+          "id": "9798b797-0db0-4b04-b198-31b0a5849318",
+          "name": "Rice & More"
+        },
+        {
+          "id": "56c015a7-b283-4e7a-b3ba-0f76f4f181dc",
+          "name": "Ghee"
+        }
+      ]
+    },
+    {
+      "name": "Meats, Fish & Eggs",
+      "url": "https://www.zeptonow.com/cn/meats-fish-eggs/meats-fish-eggs/cid/4654bd8a-fb30-4ee1-ab30-4bf581b6c6e3/scid/b6fbf886-79f1-4a34-84bf-4aed50175418",
+      "subcategories": [
+        {
+          "id": "95157c69-f03e-48e5-ae2f-d947af34397f",
+          "name": "Chicken"
+        },
+        {
+          "id": "c41382e7-5331-4116-ab96-8cf25af8eab9",
+          "name": "Fish & Sea Food"
+        },
+        {
+          "id": "af20acbf-4144-4482-8e42-1352843803a1",
+          "name": "Mutton"
+        },
+        {
+          "id": "4c2742c5-f4ca-4454-90ef-17527af7160f",
+          "name": "Marinades & Kebabs"
+        },
+        {
+          "id": "bb339b8b-5c92-4813-a95d-c856ac083556",
+          "name": "Sausages & Salami"
+        },
+        {
+          "id": "391ae139-16d9-4cdf-8c4f-22f5694a9d9e",
+          "name": "Canned & Dry Fish, Pickles"
+        },
+        {
+          "id": "a0f66fae-207e-44e8-a493-a3d14857d1e7",
+          "name": "Combos"
+        },
+        {
+          "id": "b9cd2709-1fbd-4f0d-91b1-71fecc094b60",
+          "name": "Egg"
+        }
+      ]
+    },
+    {
+      "name": "Masala, Dry Fruits & More",
+      "url": "https://www.zeptonow.com/cn/masala-dry-fruits-more/masala-dry-fruits-more/cid/0c2ccf87-e32c-4438-9560-8d9488fc73e0/scid/8b44cef2-1bab-407e-aadd-29254e6778fa",
+      "subcategories": [
+        {
+          "id": "80f4308e-91ad-4cc4-b804-57783fe4c667",
+          "name": "Powders & Pastes"
+        },
+        {
+          "id": "dee4d0bc-0348-492c-9fa3-e55b7e2a44b3",
+          "name": "Dry Fruits & Nuts"
+        },
+        {
+          "id": "bd6ea174-5b9a-4071-aae1-a7807615351e",
+          "name": "Whole Spices & Seasonings"
+        },
+        {
+          "id": "b5826992-5cfc-4554-8075-a3f33709ddf2",
+          "name": "Salt, Sugar & Jaggery"
+        },
+        {
+          "id": "9dfe488f-ee38-43e2-99c6-78d6d17676d2",
+          "name": "Dehydrated & Dried"
+        },
+        {
+          "id": "fd487995-4d2b-4b23-a6ef-831bc118dedb",
+          "name": "Dates & Seeds"
+        }
+      ]
+    },
+    {
+      "name": "Breakfast & Sauces",
+      "url": "https://www.zeptonow.com/cn/breakfast-sauces/breakfast-sauces/cid/f804bccc-c565-4879-b6ab-1b964bb1ed41/scid/68922181-4e0e-4a6b-9862-cf1a02ba240e",
+      "subcategories": [
+        {
+          "id": "c07e4c22-d076-45b0-9c73-92c117956810",
+          "name": "Breakfast Cereals"
+        },
+        {
+          "id": "cbacc78b-ae17-4324-8fd5-0ba540b10fb7",
+          "name": "Ketchup & Sauces"
+        },
+        {
+          "id": "dafa5c98-3367-4624-90a4-0a2af6e695c3",
+          "name": "Muesli & Oats"
+        },
+        {
+          "id": "afce5895-f724-458f-8e23-28354a437c96",
+          "name": "Honey & Spreads"
+        },
+        {
+          "id": "645a456e-adb6-4756-89d7-d9dda53738f8",
+          "name": "Peanut Butter"
+        },
+        {
+          "id": "01b6ce0b-071a-4e32-b671-994f6d6da8b8",
+          "name": "Batter & Mixes"
+        },
+        {
+          "id": "75cb08c9-27c6-403e-b3fc-a7c7c0c4fc8d",
+          "name": "Tea & Coffee"
+        },
+        {
+          "id": "60a35530-9491-4baf-9ec9-462add14e112",
+          "name": "Zepto Cafe"
+        }
+      ]
+    },
+    {
+      "name": "Packaged Food",
+      "url": "https://www.zeptonow.com/cn/packaged-food/packaged-food/cid/5736ad99-f589-4d58-a24b-a12222320a37/scid/dbb39a86-256b-4664-81ed-6668418a5436",
+      "subcategories": [
+        {
+          "id": "d5fbe386-0579-4461-b88b-af427ffb31ea",
+          "name": "Noodles & Vermicelli"
+        },
+        {
+          "id": "3d2b3d99-63d3-43da-b100-baa0c8b283bf",
+          "name": "Pasta & Soups"
+        },
+        {
+          "id": "460558e5-c6bf-401f-9f8d-fa86f0b6043a",
+          "name": "Papads, Pickles & Chutney"
+        },
+        {
+          "id": "c827a6d8-3834-4f80-9146-14dc7cc69eb4",
+          "name": "Ready To Cook"
+        },
+        {
+          "id": "c28114a0-2fc3-4274-8a68-04ead1adfb47",
+          "name": "Ready To Eat"
+        },
+        {
+          "id": "5eef200f-d318-4dad-90bd-ccc579d165f3",
+          "name": "Baby Food"
+        },
+        {
+          "id": "941f0a50-2122-4e9e-baf9-35d66323f948",
+          "name": "Baking Mixes & Ingredients"
+        },
+        {
+          "id": "a62e5e4f-1c24-44cc-b911-cc684fa4ad24",
+          "name": "Dessert Mixes"
+        }
+      ]
+    },
+    {
+      "name": "Tea, Coffee & More",
+      "url": "https://www.zeptonow.com/cn/tea-coffee-more/tea-coffee-more/cid/d7e98d87-6850-4cf9-a37c-e4fa34ae302c/scid/e6763c2d-0bf3-4332-82e4-0c8df1c94cad",
+      "subcategories": [
+        {
+          "id": "0055bf0a-f578-4fa7-8b98-0c6e446bbe29",
+          "name": "Coffee"
+        },
+        {
+          "id": "5712deed-7a70-4d88-b21a-352eaff18dc3",
+          "name": "Zepto Cafe"
+        },
+        {
+          "id": "3c1856d3-7dd9-4657-8b14-4f47046c9369",
+          "name": "Tea"
+        },
+        {
+          "id": "ba628461-3043-41a7-abba-32518b742930",
+          "name": "Drink Mixes"
+        },
+        {
+          "id": "d9d62fba-e97d-4d9d-88a9-c226f116e976",
+          "name": "Green & Herbal Tea"
+        },
+        {
+          "id": "0d755c75-58ff-446e-8761-8b06781d167a",
+          "name": "Ready To Drink"
+        }
+      ]
+    },
+    {
+      "name": "Ice Creams & More",
+      "url": "https://www.zeptonow.com/cn/ice-creams-more/ice-creams-more/cid/65ee1b69-4e24-45b9-ac84-aace3c0854d8/scid/21c1011a-c677-4007-ac20-abc1542cb89c",
+      "subcategories": [
+        {
+          "id": "21c1011a-c677-4007-ac20-abc1542cb89c",
+          "name": "Tubs"
+        },
+        {
+          "id": "ce577733-e375-48f8-9009-97f5c9a5e68f",
+          "name": "Sticks"
+        },
+        {
+          "id": "b7093ed5-7170-408a-99f0-c8d0bd21b25a",
+          "name": "Cones"
+        },
+        {
+          "id": "32173cd6-b8e4-497e-8e95-9c1ff04ae46b",
+          "name": "Cups"
+        },
+        {
+          "id": "6cace257-c35d-44f8-bfbb-b88f285e67fa",
+          "name": "Guilt Free"
+        },
+        {
+          "id": "30e08b20-9431-4f46-9636-521a33015bae",
+          "name": "Cakes, Sandwiches & More"
+        },
+        {
+          "id": "7aab08ec-9f55-4b8c-ab0e-0af011e900a1",
+          "name": "Kulfi"
+        },
+        {
+          "id": "bef8a1a8-889e-4703-9df9-2cff145f18ff",
+          "name": "Ice Cubes & Ice Pops"
+        }
+      ]
+    },
+    {
+      "name": "Frozen Food",
+      "url": "https://www.zeptonow.com/cn/frozen-food/frozen-food/cid/aae1447d-1403-4a5c-a65f-bcb3afb93b5e/scid/98beb18c-0205-4267-9a30-7a749bec1b63",
+      "subcategories": [
+        {
+          "id": "dd3fd11a-5ed1-40a9-8e3c-edf3b82e7d32",
+          "name": "Veg Snacks"
+        },
+        {
+          "id": "c7506b56-1bb6-4bfb-8622-854d744d45ca",
+          "name": "Non Veg Snacks"
+        },
+        {
+          "id": "112b3aac-feee-4e01-9e5a-701dc1b5464e",
+          "name": "Momos & More"
+        },
+        {
+          "id": "1ee9ca43-47d6-470e-8b3e-158f0c951fb0",
+          "name": "Raw Meats"
+        },
+        {
+          "id": "007dfd66-b8b4-4cbe-8454-ddcaaecafe16",
+          "name": "Roti & Paratha"
+        },
+        {
+          "id": "5fd934bf-6fea-41e6-b7aa-9a98f45bf015",
+          "name": "Sausages, Salami & Ham"
+        },
+        {
+          "id": "5fd4bc47-3a98-4984-a2ac-a8f02c4149cd",
+          "name": "Frozen Veggies & Pulp"
+        }
+      ]
+    },
+    {
+      "name": "Sweet Cravings",
+      "url": "https://www.zeptonow.com/cn/sweet-cravings/sweet-cravings/cid/adab2f81-7140-4fe9-b8cf-3d809f40e38a/scid/002a4a04-fbc0-4fd9-a259-eb95158f8067",
+      "subcategories": [
+        {
+          "id": "ca984d2d-70b8-464c-b182-41aa328b3d4b",
+          "name": "Chocolates"
+        },
+        {
+          "id": "45437faf-90ba-457b-8edf-1a95f791f909",
+          "name": "Zepto Cafe"
+        },
+        {
+          "id": "b353a8f7-7dd6-4efe-954f-45bbddb6be5f",
+          "name": "Indian Mithai"
+        },
+        {
+          "id": "fce3a00a-4543-424a-a5af-73bbd2ce3f75",
+          "name": "Pastries & Cakes"
+        },
+        {
+          "id": "ab2b2b45-a6d4-4982-9eb8-c3615b1d8608",
+          "name": "Dessert Mixes"
+        },
+        {
+          "id": "e300bbfe-74db-4a3f-ba9c-052f296212c2",
+          "name": "Candies, Gums & Mints"
+        },
+        {
+          "id": "fda4043f-c6b5-4edb-bc74-9173c334499a",
+          "name": "Premium Chocolates"
+        }
+      ]
+    },
+    {
+      "name": "Cold Drinks & Juices",
+      "url": "https://www.zeptonow.com/cn/cold-drinks-juices/cold-drinks-juices/cid/947a72ae-b371-45cb-ad3a-778c05b64399/scid/7dceec53-78f9-4f06-83d7-c8edd9c2f71a",
+      "subcategories": [
+        {
+          "id": "dff3658b-c351-4e7f-8196-e98d0c66d99e",
+          "name": "Soft Drinks"
+        },
+        {
+          "id": "0df54b3f-11f6-4ada-b38a-9be38ea25eba",
+          "name": "Soda & Mixers"
+        },
+        {
+          "id": "c41e2ad3-2dcc-42b6-829b-7e3a8e78d754",
+          "name": "Fruit Juices & Drinks"
+        },
+        {
+          "id": "c6bba2b2-6b2d-4bd4-ae3d-adb6f9383393",
+          "name": "Non-Alcoholic & Energy Drink"
+        },
+        {
+          "id": "b783925b-6b57-4750-99f6-01ea5145ec5e",
+          "name": "Water"
+        },
+        {
+          "id": "b088d5e3-9d52-405c-97a6-b2ab8e073575",
+          "name": "Value Added Hydration"
+        },
+        {
+          "id": "c5638eba-30c0-4a40-8c63-c9947fd22c16",
+          "name": "Milk Drinks"
+        },
+        {
+          "id": "dcfd1067-a597-4ef0-81d6-9a3d1b9a2891",
+          "name": "Vegan Drinks"
+        },
+        {
+          "id": "4d088b94-ba43-4bf0-a881-a573862aa0a1",
+          "name": "Instant Drink Mixes"
+        },
+        {
+          "id": "d7b1c36b-25fc-450c-a2f4-84fd5a68f996",
+          "name": "Zepto Cafe"
+        }
+      ]
+    },
+    {
+      "name": "Munchies",
+      "url": "https://www.zeptonow.com/cn/munchies/munchies/cid/d2c2a144-43cd-43e5-b308-92628fa68596/scid/d648ea7c-18f0-4178-a202-4751811b086b",
+      "subcategories": [
+        {
+          "id": "df4f5100-c02f-4906-83b8-ddb744081a7a",
+          "name": "Chips & Crisps"
+        },
+        {
+          "id": "a0f89bc4-0c31-42c3-b1db-e25e6771ef1d",
+          "name": "Zepto Cafe"
+        },
+        {
+          "id": "bfd35e8f-39b8-483f-8e3a-b80231d614ce",
+          "name": "Namkeens"
+        },
+        {
+          "id": "b3a8697a-e355-4368-976d-c389ff34a90e",
+          "name": "Nachos"
+        },
+        {
+          "id": "06fd05d2-ed6d-4355-9c1d-ef7909ff1584",
+          "name": "Popcorn"
+        },
+        {
+          "id": "67fe57ab-558c-4949-9e52-60a1306d3619",
+          "name": "Dry Fruits & Nuts Munchies"
+        },
+        {
+          "id": "08b6d5d6-ff35-4172-8240-514f84e7c0ee",
+          "name": "Energy Bars"
+        }
+      ]
+    },
+    {
+      "name": "Biscuits",
+      "url": "https://www.zeptonow.com/cn/biscuits/biscuits/cid/2552acf2-2f77-4714-adc8-e505de3985db/scid/3a10723e-ba14-4e5c-bdeb-a4dce2c1bec4",
+      "subcategories": [
+        {
+          "id": "76b87813-c0ff-451d-accf-d6840a42a067",
+          "name": "Creamfills"
+        },
+        {
+          "id": "7b07c0b3-d0c6-4ec0-995a-35c17adce0d8",
+          "name": "Cookies"
+        },
+        {
+          "id": "9fbe608d-c5b9-4ade-b1cb-09eb1a493bb0",
+          "name": "Crackers"
+        },
+        {
+          "id": "f9502427-0360-4926-9db3-94a65d04d9ed",
+          "name": "Wafers"
+        },
+        {
+          "id": "557279cf-a155-4b94-b5cc-97185bd30aee",
+          "name": "Glucose & Marie"
+        },
+        {
+          "id": "55908138-86a0-49d8-a77a-1ebb4bc1bb8f",
+          "name": "Digestives"
+        },
+        {
+          "id": "703faebd-1224-4913-8c32-bb862d1fda62",
+          "name": "Rusk & Khari"
+        }
+      ]
+    }
+  ]
+}

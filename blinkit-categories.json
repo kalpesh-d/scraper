@@ -1,0 +1,518 @@
+{
+  "Chicken, Meat & Fish": [
+    {
+      "name": "Exotic Meat",
+      "url": "https://blinkit.com/cn/exotic-meat/cid/4/1201"
+    },
+    {
+      "name": "Fish & Seafood",
+      "url": "https://blinkit.com/cn/fish-seafood/cid/4/1361"
+    },
+    {
+      "name": "Chicken",
+      "url": "https://blinkit.com/cn/chicken/cid/4/1362"
+    },
+    {
+      "name": "Mutton",
+      "url": "https://blinkit.com/cn/mutton/cid/4/1363"
+    },
+    {
+      "name": "Sausage, Salami & Ham",
+      "url": "https://blinkit.com/cn/sausage-salami-ham/cid/4/1388"
+    }
+  ],
+  "Dairy, Bread & Eggs": [
+    {
+      "name": "Cheese",
+      "url": "https://blinkit.com/cn/cheese/cid/14/33"
+    },
+    {
+      "name": "Curd & Yogurt",
+      "url": "https://blinkit.com/cn/curd-yogurt/cid/14/123"
+    },
+    {
+      "name": "Condensed Milk",
+      "url": "https://blinkit.com/cn/condensed-milk/cid/14/130"
+    },
+    {
+      "name": "Gourmet Cheese",
+      "url": "https://blinkit.com/cn/gourmet-cheese/cid/14/185"
+    },
+    {
+      "name": "Buns & Pav",
+      "url": "https://blinkit.com/cn/buns-pav/cid/14/279"
+    },
+    {
+      "name": "Milk",
+      "url": "https://blinkit.com/cn/milk/cid/14/922"
+    },
+    {
+      "name": "Paneer & Tofu",
+      "url": "https://blinkit.com/cn/paneer-tofu/cid/14/923"
+    },
+    {
+      "name": "Butter & More",
+      "url": "https://blinkit.com/cn/butter-more/cid/14/952"
+    },
+    {
+      "name": "Bread",
+      "url": "https://blinkit.com/cn/bread/cid/14/953"
+    },
+    {
+      "name": "Cream & Whitener",
+      "url": "https://blinkit.com/cn/cream-whitener/cid/14/1092"
+    },
+    {
+      "name": "Oats",
+      "url": "https://blinkit.com/cn/oats/cid/14/584"
+    },
+    {
+      "name": "Granola",
+      "url": "https://blinkit.com/cn/granola/cid/14/613"
+    },
+    {
+      "name": "Muesli",
+      "url": "https://blinkit.com/cn/muesli/cid/14/1307"
+    },
+    {
+      "name": "Kids Cereals",
+      "url": "https://blinkit.com/cn/kids-cereals/cid/14/1739"
+    },
+    {
+      "name": "Flakes",
+      "url": "https://blinkit.com/cn/flakes/cid/14/1098"
+    },
+    {
+      "name": "Curd",
+      "url": "https://blinkit.com/cn/curd/cid/14/949"
+    },
+    {
+      "name": "Yogurt",
+      "url": "https://blinkit.com/cn/yogurt/cid/14/1094"
+    },
+    {
+      "name": "Eggs",
+      "url": "https://blinkit.com/cn/eggs/cid/14/1200"
+    },
+    {
+      "name": "Peanut Butter",
+      "url": "https://blinkit.com/cn/peanut-butter/cid/14/644"
+    },
+    {
+      "name": "Poha",
+      "url": "https://blinkit.com/cn/poha/cid/14/1288"
+    },
+    {
+      "name": "Chocolate Spreads",
+      "url": "https://blinkit.com/cn/chocolate-spreads/cid/14/504"
+    },
+    {
+      "name": "Honey",
+      "url": "https://blinkit.com/cn/honey/cid/14/610"
+    }
+  ],
+  "Breakfast & Instant Food": [
+    {
+      "name": "Energy Bars",
+      "url": "https://blinkit.com/cn/energy-bars/cid/15/152"
+    },
+    {
+      "name": "Breakfast Cereal",
+      "url": "https://blinkit.com/cn/breakfast-cereal/cid/15/954"
+    },
+    {
+      "name": "Noodles",
+      "url": "https://blinkit.com/cn/noodles/cid/15/962"
+    },
+    {
+      "name": "Soup",
+      "url": "https://blinkit.com/cn/soup/cid/15/964"
+    },
+    {
+      "name": "Instant Mixes",
+      "url": "https://blinkit.com/cn/instant-mixes/cid/15/965"
+    },
+    {
+      "name": "Pasta",
+      "url": "https://blinkit.com/cn/pasta/cid/15/968"
+    },
+    {
+      "name": "Plant Based Meat",
+      "url": "https://blinkit.com/cn/plant-based-meat/cid/15/1127"
+    },
+    {
+      "name": "Vermicelli",
+      "url": "https://blinkit.com/cn/vermicelli/cid/15/1140"
+    },
+    {
+      "name": "Ready to Eat",
+      "url": "https://blinkit.com/cn/ready-to-eat/cid/15/1294"
+    },
+    {
+      "name": "Frozen Non-Veg Snacks",
+      "url": "https://blinkit.com/cn/frozen-non-veg-snacks/cid/15/1412"
+    },
+    {
+      "name": "Frozen Veg Snacks",
+      "url": "https://blinkit.com/cn/frozen-veg-snacks/cid/15/1413"
+    },
+    {
+      "name": "Batter",
+      "url": "https://blinkit.com/cn/batter/cid/15/1425"
+    },
+    {
+      "name": "Herbs & Seasoning",
+      "url": "https://blinkit.com/cn/herbs-seasoning/cid/15/1968"
+    }
+  ],
+  "Atta, Rice & Dal": [
+    {
+      "name": "Moong & Masoor",
+      "url": "https://blinkit.com/cn/moong-masoor/cid/16/505"
+    },
+    {
+      "name": "Rice",
+      "url": "https://blinkit.com/cn/rice/cid/16/1161"
+    },
+    {
+      "name": "Besan, Sooji & Maida",
+      "url": "https://blinkit.com/cn/besan-sooji-maida/cid/16/1166"
+    },
+    {
+      "name": "Poha, Daliya & Other Grains",
+      "url": "https://blinkit.com/cn/poha-daliya-other-grains/cid/16/1295"
+    },
+    {
+      "name": "Rajma, Chhole & Others",
+      "url": "https://blinkit.com/cn/rajma-chhole-others/cid/16/1573"
+    },
+    {
+      "name": "Urad",
+      "url": "https://blinkit.com/cn/urad/cid/16/1197"
+    },
+    {
+      "name": "Pesticide-Free Pulses",
+      "url": "https://blinkit.com/cn/pesticide-free-pulses/cid/16/11"
+    },
+    {
+      "name": "Chana",
+      "url": "https://blinkit.com/cn/chana/cid/16/1702"
+    },
+    {
+      "name": "Toor",
+      "url": "https://blinkit.com/cn/toor/cid/16/1010"
+    },
+    {
+      "name": "Arhar",
+      "url": "https://blinkit.com/cn/arhar/cid/16/1195"
+    },
+    {
+      "name": "Sonamasuri & Kolam Rice",
+      "url": "https://blinkit.com/cn/sonamasuri-kolam-rice/cid/16/1192"
+    },
+    {
+      "name": "Ponni Rice",
+      "url": "https://blinkit.com/cn/ponni-rice/cid/16/1482"
+    },
+    {
+      "name": "Basmati Rice",
+      "url": "https://blinkit.com/cn/basmati-rice/cid/16/1164"
+    },
+    {
+      "name": "Soya",
+      "url": "https://blinkit.com/cn/soya/cid/16/1297"
+    },
+    {
+      "name": "Rajma",
+      "url": "https://blinkit.com/cn/rajma/cid/16/1198"
+    },
+    {
+      "name": "Flours",
+      "url": "https://blinkit.com/cn/flours/cid/16/48"
+    },
+    {
+      "name": "Moong",
+      "url": "https://blinkit.com/cn/moong/cid/16/1196"
+    },
+    {
+      "name": "Sooji",
+      "url": "https://blinkit.com/cn/sooji/cid/16/1194"
+    },
+    {
+      "name": "Maida",
+      "url": "https://blinkit.com/cn/maida/cid/16/1483"
+    },
+    {
+      "name": "Besan",
+      "url": "https://blinkit.com/cn/besan/cid/16/1193"
+    },
+    {
+      "name": "Atta",
+      "url": "https://blinkit.com/cn/atta/cid/16/1165"
+    },
+    {
+      "name": "Kabuli Chana",
+      "url": "https://blinkit.com/cn/kabuli-chana/cid/16/8"
+    },
+    {
+      "name": "Dried Peas",
+      "url": "https://blinkit.com/cn/dried-peas/cid/16/1009"
+    }
+  ],
+  "Ice Cream & Frozen Desserts": [
+    {
+      "name": "Tubs",
+      "url": "https://blinkit.com/cn/tubs/cid/1969/1962"
+    },
+    {
+      "name": "Sticks",
+      "url": "https://blinkit.com/cn/sticks/cid/1969/263"
+    },
+    {
+      "name": "Sandwiches, Cakes, and Other",
+      "url": "https://blinkit.com/cn/sandwiches-cakes-and-other/cid/1969/333"
+    },
+    {
+      "name": "Cups",
+      "url": "https://blinkit.com/cn/cups/cid/1969/262"
+    },
+    {
+      "name": "Cones",
+      "url": "https://blinkit.com/cn/cones/cid/1969/1410"
+    }
+  ],
+  "Bakery & Biscuits": [
+    {
+      "name": "Cookies",
+      "url": "https://blinkit.com/cn/cookies/cid/888/28"
+    },
+    {
+      "name": "Cream Biscuits",
+      "url": "https://blinkit.com/cn/cream-biscuits/cid/888/105"
+    },
+    {
+      "name": "Rusks & Wafers",
+      "url": "https://blinkit.com/cn/rusks-wafers/cid/888/107"
+    },
+    {
+      "name": "Sweet & Salty",
+      "url": "https://blinkit.com/cn/sweet-salty/cid/888/144"
+    },
+    {
+      "name": "Glucose & Marie",
+      "url": "https://blinkit.com/cn/glucose-marie/cid/888/209"
+    },
+    {
+      "name": "Healthy & Digestive",
+      "url": "https://blinkit.com/cn/healthy-digestive/cid/888/938"
+    },
+    {
+      "name": "Baking Ingredients & Mixes",
+      "url": "https://blinkit.com/cn/baking-ingredients-mixes/cid/888/971"
+    },
+    {
+      "name": "Gourmet Bakery",
+      "url": "https://blinkit.com/cn/gourmet-bakery/cid/888/1663"
+    },
+    {
+      "name": "Specialty Breads",
+      "url": "https://blinkit.com/cn/specialty-breads/cid/888/1097"
+    },
+    {
+      "name": "Milk & White Breads",
+      "url": "https://blinkit.com/cn/milk-white-breads/cid/888/31"
+    },
+    {
+      "name": "Fresh Muffins & Cake",
+      "url": "https://blinkit.com/cn/fresh-muffins-cake/cid/888/176"
+    },
+    {
+      "name": "Fresh Bakery",
+      "url": "https://blinkit.com/cn/fresh-bakery/cid/888/477"
+    },
+    {
+      "name": "Buns, Pavs & Pizza Base",
+      "url": "https://blinkit.com/cn/buns-pavs-pizza-base/cid/888/1956"
+    },
+    {
+      "name": "Brown & Multigrain Breads",
+      "url": "https://blinkit.com/cn/brown-multigrain-breads/cid/888/198"
+    }
+  ],
+  "Sauces & Spreads": [
+    {
+      "name": "Cooking Sauces & Paste",
+      "url": "https://blinkit.com/cn/cooking-sauces-paste/cid/972/929"
+    },
+    {
+      "name": "Dips & Spreads",
+      "url": "https://blinkit.com/cn/dips-spreads/cid/972/974"
+    },
+    {
+      "name": "Jams",
+      "url": "https://blinkit.com/cn/jams/cid/972/975"
+    },
+    {
+      "name": "Honey",
+      "url": "https://blinkit.com/cn/honey/cid/972/976"
+    },
+    {
+      "name": "Chocolate Spreads",
+      "url": "https://blinkit.com/cn/chocolate-spreads/cid/972/978"
+    },
+    {
+      "name": "Chutney & Pickle",
+      "url": "https://blinkit.com/cn/chutney-pickle/cid/972/1126"
+    },
+    {
+      "name": "Asian Sauces",
+      "url": "https://blinkit.com/cn/asian-sauces/cid/972/1130"
+    },
+    {
+      "name": "Tomato & Chilli Ketchups",
+      "url": "https://blinkit.com/cn/tomato-chilli-ketchups/cid/972/1131"
+    },
+    {
+      "name": "Chyawanprash",
+      "url": "https://blinkit.com/cn/chyawanprash/cid/972/1135"
+    },
+    {
+      "name": "Salad Dressings",
+      "url": "https://blinkit.com/cn/salad-dressings/cid/972/1375"
+    },
+    {
+      "name": "Peanut Butter",
+      "url": "https://blinkit.com/cn/peanut-butter/cid/972/1918"
+    }
+  ],
+  "Munchies": [
+    {
+      "name": "Namkeen Snacks",
+      "url": "https://blinkit.com/cn/namkeen-snacks/cid/1237/29"
+    },
+    {
+      "name": "Papad & Fryums",
+      "url": "https://blinkit.com/cn/papad-fryums/cid/1237/80"
+    },
+    {
+      "name": "Popcorn",
+      "url": "https://blinkit.com/cn/popcorn/cid/1237/156"
+    },
+    {
+      "name": "Nachos",
+      "url": "https://blinkit.com/cn/nachos/cid/1237/316"
+    },
+    {
+      "name": "Healthy Snacks",
+      "url": "https://blinkit.com/cn/healthy-snacks/cid/1237/816"
+    },
+    {
+      "name": "Chips & Crisps",
+      "url": "https://blinkit.com/cn/chips-crisps/cid/1237/940"
+    },
+    {
+      "name": "Bhujia & Mixtures",
+      "url": "https://blinkit.com/cn/bhujia-mixtures/cid/1237/1178"
+    }
+  ],
+  "Vegetables & Fruits": [
+    {
+      "name": "Exotics & Premium",
+      "url": "https://blinkit.com/cn/exotics-premium/cid/1487/278"
+    },
+    {
+      "name": "Freshly Cut & Sprouts",
+      "url": "https://blinkit.com/cn/freshly-cut-sprouts/cid/1487/395"
+    },
+    {
+      "name": "Gourmet Mushroom",
+      "url": "https://blinkit.com/cn/gourmet-mushroom/cid/1487/482"
+    },
+    {
+      "name": "Organic & Hydroponic",
+      "url": "https://blinkit.com/cn/organic-hydroponic/cid/1487/742"
+    },
+    {
+      "name": "Combo Offer",
+      "url": "https://blinkit.com/cn/combo-offer/cid/1487/928"
+    },
+    {
+      "name": "Fruits",
+      "url": "https://blinkit.com/cn/fruits/cid/1487/1503"
+    },
+    {
+      "name": "Flowers & Leaves",
+      "url": "https://blinkit.com/cn/flowers-leaves/cid/1487/1452"
+    },
+    {
+      "name": "Fresh Juice & Dips",
+      "url": "https://blinkit.com/cn/fresh-juice-dips/cid/1487/1941"
+    },
+    {
+      "name": "Frozen Indian Breads",
+      "url": "https://blinkit.com/cn/frozen-indian-breads/cid/1487/116"
+    },
+    {
+      "name": "Frozen Veg",
+      "url": "https://blinkit.com/cn/frozen-veg/cid/1487/157"
+    },
+    {
+      "name": "Fresh Vegetables",
+      "url": "https://blinkit.com/cn/fresh-vegetables/cid/1487/1489"
+    },
+    {
+      "name": "Frozen Peas & Corn",
+      "url": "https://blinkit.com/cn/frozen-peas-corn/cid/1487/172"
+    },
+    {
+      "name": "Frozen Potato Snacks",
+      "url": "https://blinkit.com/cn/frozen-potato-snacks/cid/1487/122"
+    },
+    {
+      "name": "Other Frozen Vegetables",
+      "url": "https://blinkit.com/cn/other-frozen-vegetables/cid/1487/222"
+    },
+    {
+      "name": "Hydroponics",
+      "url": "https://blinkit.com/cn/hydroponics/cid/1487/39"
+    },
+    {
+      "name": "Leafies & Herbs",
+      "url": "https://blinkit.com/cn/leafies-herbs/cid/1487/1871"
+    },
+    {
+      "name": "Other Frozen Snacks",
+      "url": "https://blinkit.com/cn/other-frozen-snacks/cid/1487/125"
+    }
+  ],
+  "Masala, Oil & More": [
+    {
+      "name": "Powdered Masala",
+      "url": "https://blinkit.com/cn/powdered-masala/cid/1557/50"
+    },
+    {
+      "name": "Dates & Seeds",
+      "url": "https://blinkit.com/cn/dates-seeds/cid/1557/815"
+    },
+    {
+      "name": "Oil",
+      "url": "https://blinkit.com/cn/oil/cid/1557/917"
+    },
+    {
+      "name": "Whole Spices",
+      "url": "https://blinkit.com/cn/whole-spices/cid/1557/930"
+    },
+    {
+      "name": "Salt, Sugar & Jaggery",
+      "url": "https://blinkit.com/cn/salt-sugar-jaggery/cid/1557/933"
+    },
+    {
+      "name": "Ghee & Vanaspati",
+      "url": "https://blinkit.com/cn/ghee-vanaspati/cid/1557/1158"
+    },
+    {
+      "name": "Dry Fruits",
+      "url": "https://blinkit.com/cn/dry-fruits/cid/1557/1160"
+    }
+  ]
+}

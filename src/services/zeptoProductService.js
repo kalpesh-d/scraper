@@ -11,7 +11,11 @@ export class ZeptoProductService {
       .replace(/\s+/g, "-")
       .trim();
 
-    return `${ZEPTO_CONFIG.BASE_URL}/cn/${formattedName}/cid/${category.id}/scid/${subcategory.id}`;
+    // Extract category ID from URL
+    const categoryIdMatch = category.url.match(/\/cid\/([^/]+)/);
+    const categoryId = categoryIdMatch ? categoryIdMatch[1] : "";
+
+    return `${ZEPTO_CONFIG.BASE_URL}/cn/${formattedName}/cid/${categoryId}/scid/${subcategory.id}`;
   }
 
   async extractProducts(page) {
@@ -57,14 +61,14 @@ export class ZeptoProductService {
           const outOfStock = product.querySelector(
             ".relative.my-3.rounded-t-xl.rounded-b-md.group.mb-12"
           );
-          const available = !outOfStock;
+          const available = outOfStock ? false : true;
 
           if (name && imageUrl && currentPrice) {
             products.push({
               id,
               name,
               variant,
-              platform: "zepto",
+              platform: "Zepto",
               currentPrice,
               actualPrice,
               image: imageUrl,
@@ -120,7 +124,7 @@ export class ZeptoProductService {
                 ...product,
                 category: subcategory.name,
               },
-              "zepto"
+              "Zepto"
             );
             processedProducts.push(product.id);
           }

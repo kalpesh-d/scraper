@@ -30,7 +30,7 @@ const productSchema = new mongoose.Schema(
     },
     platform: {
       type: String,
-      enum: ["dmart", "zepto", "blinkit"],
+      enum: ["D-Mart", "Zepto", "Blinkit"],
       required: true,
       index: true,
     },

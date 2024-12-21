@@ -78,7 +78,7 @@ export class BlinkitProductService {
                 ...product,
                 category: category.name,
               },
-              "blinkit"
+              "Blinkit"
             );
             processedProducts.push(product.id);
           }
@@ -134,9 +134,8 @@ export class BlinkitProductService {
             priceContainer?.querySelector("div:first-child")?.textContent;
           const outOfStock = productElement.querySelector(
             ".AddToCart__UpdatedOutOfStockTag-sc-17ig0e3-4.bxVUKb"
-          )
-            ? true
-            : false;
+          );
+          const available = outOfStock ? false : true;
 
           // Create unique ID by combining name and variant
           const id = `${name}_${variant || ""}`
@@ -149,10 +148,10 @@ export class BlinkitProductService {
               name,
               image,
               variant,
-              platform: "blinkit",
+              platform: "Blinkit",
               actualPrice,
               currentPrice,
-              available: !outOfStock,
+              available,
             });
           }
         } catch (error) {

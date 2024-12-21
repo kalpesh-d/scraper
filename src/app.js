@@ -11,23 +11,23 @@ const main = async () => {
     // Connect to MongoDB at start
     await connectDB();
 
-    const dmartCategoryService = new DmartCategoryService();
-    const dmartpProductService = new DmartProductService();
+    // const dmartCategoryService = new DmartCategoryService();
+    // const dmartpProductService = new DmartProductService();
 
-    const categories = await dmartCategoryService.fetchCategories();
-    if (categories) {
-      await dmartpProductService.scrapeProducts(categories);
-    }
+    // const categories = await dmartCategoryService.fetchCategories();
+    // if (categories) {
+    //   await dmartpProductService.scrapeProducts(categories);
+    // }
 
-    const blinkitCategoryService = new BlinkitCategoryService();
-    const blinkitCategories = await blinkitCategoryService.fetchCategories();
+    // const blinkitCategoryService = new BlinkitCategoryService();
+    // const blinkitCategories = await blinkitCategoryService.fetchCategories();
 
-    if (blinkitCategories) {
-      const blinkitProductService = new BlinkitProductService();
-      for (const categoryGroup of Object.values(blinkitCategories)) {
-        await blinkitProductService.scrapeProducts(categoryGroup);
-      }
-    }
+    // if (blinkitCategories) {
+    //   const blinkitProductService = new BlinkitProductService();
+    //   for (const categoryGroup of Object.values(blinkitCategories)) {
+    //     await blinkitProductService.scrapeProducts(categoryGroup);
+    //   }
+    // }
 
     const zeptoCategoryService = new ZeptoCategoryService();
     const zeptoCategories = await zeptoCategoryService.fetchCategories();

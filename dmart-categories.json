@@ -1,0 +1,34 @@
+{
+  "totalRecords": 562,
+  "defaultzip": "400053",
+  "catArray": [
+    {
+      "name": "Grocery",
+      "seoToken": "grocery-aesc-grocerycore",
+      "uniqueId": "93193",
+      "fullImage": "aesc-grocerycore",
+      "thumbnail": "grocery-131022"
+    },
+    {
+      "name": "Dairy & Beverages",
+      "seoToken": "dairy---beverages-aesc-dairyandbeveragescore",
+      "uniqueId": "93202",
+      "fullImage": "aesc-dairyandbeveragescore",
+      "thumbnail": "dairybeverages-131022"
+    },
+    {
+      "name": "Packaged Food",
+      "seoToken": "packaged-food-aesc-packagedfoodcore",
+      "uniqueId": "93195",
+      "fullImage": "aesc-packagedfoodcore",
+      "thumbnail": "packaged-foods-131022"
+    },
+    {
+      "name": "Fruits & Vegetables",
+      "seoToken": "fruits---vegetables-aesc-fruitsandvegetablescore",
+      "uniqueId": "93199",
+      "fullImage": "aesc-fruitsandvegetablescore",
+      "thumbnail": "fruits-vegetables-131022"
+    }
+  ]
+}

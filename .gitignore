@@ -1,7 +1,6 @@
 # Logs
 logs
 *.log
-*.json
 !package.json
 !package-lock.json
 npm-debug.log*

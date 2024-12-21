@@ -101,7 +101,7 @@ export class DmartProductService {
                 ...product,
                 category: category.name,
               },
-              "dmart"
+              "D-Mart"
             );
             processedProducts.push(product.id);
           }
@@ -146,9 +146,9 @@ export class DmartProductService {
 
             const outOfStock = document.querySelector(
               selectors.PRODUCT_OUT_OF_STOCK
-            )
-              ? true
-              : false;
+            );
+
+            const available = outOfStock ? true : false;
             // Create unique ID by combining category, name and variant
             const id = `${category}_${name}_${variant}`
               .toLowerCase()
@@ -159,11 +159,11 @@ export class DmartProductService {
                 id,
                 name,
                 image,
-                platform: "dmart",
+                platform: "D-Mart",
                 currentPrice,
                 actualPrice,
                 variant,
-                available: !outOfStock,
+                available,
               });
             }
           } catch (error) {
